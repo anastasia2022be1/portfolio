@@ -1,0 +1,32 @@
+{
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contacts": "Contacts",
+      "about": "About me",
+      "skills": "Skills"
+    },
+    "portfolio": "Freelancer portfolio",
+    "header": {
+      "name": "Anastasia Sevastianova",
+      "title": "Fullstack Developer",
+      "subtitle": "With passion for learning and creating",
+      "work": "Check my work",
+      "contact": "Contact me"
+  },
+    "about": {
+      "title": "Who I am",
+      "subtitle": "About me",
+      "text1": "Hi, I’m a Fullstack Developer passionate about building intuitive, high-performance, and scalable web applications. My journey into development started with a curiosity about how technology can simplify and improve everyday life.",
+      "text2": "I love the problem-solving aspect of programming, where logic meets creativity. Turning complex technical challenges into elegant solutions is what drives me.",
+      "text3": "I thrive in collaborative environments, where I can share knowledge, learn from others, and contribute to meaningful projects. Being adaptable, I work effectively both on-site and remotely.",
+      "text4": "For me, programming isn’t just about writing code—it’s about creating impactful digital experiences that enhance businesses and people's lives. I am constantly learning and exploring new possibilities in tech."
+  },
+  "skills": {
+    "title": "Skill Set",
+    "description": "My journey has involved working on diverse projects, employing a range of frontend and backend technologies. I am always eager to embrace new tools and methodologies to enhance my expertise and stay ahead in the fast-paced world of web development.",
+    "contact": "Need another skill?",
+    "contact_link": "Feel free to contact me. I look forward to expanding my knowledge."
+  }
+  }
+  

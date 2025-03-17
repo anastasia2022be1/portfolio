@@ -1,0 +1,83 @@
+import { useTranslation } from "react-i18next";
+import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaServer } from "react-icons/fa";
+import { SiTypescript, SiPostgresql, SiMongodb, SiExpress } from "react-icons/si";
+import { Link } from "react-router-dom";
+
+export default function Skills() {
+  const { t } = useTranslation();
+
+  return (
+    <section className="skills">
+      <div className="container skills__wrapper">
+        {/* Блок Skill Set (Левая часть) */}
+        <div className="skills__set">
+          <h2 className="title-2">{t("skills.title")}</h2>
+          <p>{t("skills.description")}</p>
+          <p className="skills__contact">
+            {t("skills.contact")} <Link to="/contacts">{t("skills.contact_link")}</Link>
+          </p>
+        </div>
+
+        {/* Блок с иконками и названиями (Правая часть) */}
+        <div className="skills__icons">
+          <div className="skill">
+            <FaHtml5 className="skill-icon" />
+            <span>HTML5</span>
+          </div>
+          <div className="skill">
+            <FaCss3Alt className="skill-icon" />
+            <span>CSS3</span>
+          </div>
+          <div className="skill">
+            <FaJs className="skill-icon" />
+            <span>JavaScript (ES6+)</span>
+          </div>
+          <div className="skill">
+            <FaSass className="skill-icon" />
+            <span>SASS / SCSS</span>
+          </div>
+          <div className="skill">
+            <FaBootstrap className="skill-icon" />
+            <span>Bootstrap</span>
+          </div>
+          <div className="skill">
+            <FaReact className="skill-icon" />
+            <span>React</span>
+          </div>
+          <div className="skill">
+            <FaNodeJs className="skill-icon" />
+            <span>Node.js</span>
+          </div>
+          <div className="skill">
+            <SiExpress className="skill-icon" />
+            <span>Express</span>
+          </div>
+          <div className="skill">
+            <FaServer className="skill-icon" />
+            <span>REST API</span>
+          </div>
+          <div className="skill">
+            <SiPostgresql className="skill-icon" />
+            <span>PostgreSQL</span>
+          </div>
+          <div className="skill">
+            <SiMongodb className="skill-icon" />
+            <span>MongoDB</span>
+          </div>
+          <div className="skill">
+            <FaGitAlt className="skill-icon" />
+            <span>Git / GitHub</span>
+          </div>
+          <div className="skill">
+            <FaDocker className="skill-icon" />
+            <span>Docker</span>
+          </div>
+          <div className="skill">
+            <SiTypescript className="skill-icon" />
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

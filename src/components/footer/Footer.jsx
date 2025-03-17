@@ -1,27 +1,36 @@
-import './style.css'
-import vk from './../../img/icons/vk.svg'
-import linkedIn from './../../img/icons/linkedIn.svg'
-import twitter from './../../img/icons/twitter.svg'
-import instagram from './../../img/icons/instagram.svg'
-import gitHub from './../../img/icons/gitHub.svg'
+import "./style.css";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-        <footer className="footer">
-        <div className="container">
-            <div className="footer__wrapper">
-                <ul className="social">
-                    <li className="social__item"><a href="#!"><img src={vk} alt="Link" /></a></li>
-                    <li className="social__item"><a href="#!"><img src={instagram} alt="Link" /></a></li>
-                    <li className="social__item"><a href="#!"><img src={twitter} alt="Link" /></a></li>
-                    <li className="social__item"><a href="#!"><img src={gitHub} alt="Link" /></a></li>
-                    <li className="social__item"><a href="#!"><img src={linkedIn} alt="Link" /></a></li>
-                </ul>
-                <div className="copyright">
-                    <p>© 2022 frontend-dev.com</p>
-                </div>
-            </div>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__wrapper">
+          {/* Социальные ссылки */}
+          <ul className="social">
+            <li className="social__item">
+              <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="social__icon" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="social__icon" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="mailto:your.email@example.com">
+                <FaEnvelope className="social__icon" />
+              </a>
+            </li>
+          </ul>
+          
+          {/* Авторские права */}
+          <div className="copyright">
+            <p>© {new Date().getFullYear()} Anastasiia Sevastianova</p>
+          </div>
         </div>
+      </div>
     </footer>
-  )
+  );
 }
