@@ -1,32 +1,38 @@
 {
-    "nav": {
-      "home": "Startseite",
-      "projects": "Projekte",
-      "contacts": "Kontakte",
-      "about": "Über mich",
-      "skills": "Fähigkeiten"
-    },
-    "portfolio": "Freiberufler-Portfolio",
-    "header": {
-      "name": "Anastasia Sevastianova",
-      "title": "Fullstack-Entwicklerin",
-      "subtitle": "Mit Leidenschaft für Lernen und Kreation",
-      "work": "Meine Arbeit ansehen",
-      "contact": "Kontaktiere mich"
-    },
-    "about": {
-      "title": "Wer bin ich",
-      "subtitle": "Über mich",
-      "text1": "Hallo, ich bin eine Fullstack-Entwicklerin, die leidenschaftlich daran arbeitet, intuitive, leistungsstarke und skalierbare Webanwendungen zu erstellen. Mein Weg in die Entwicklung begann mit der Neugier, wie Technologie den Alltag vereinfachen und verbessern kann.",
-      "text2": "Ich liebe die Problemlösungsaspekte der Programmierung, bei denen sich Logik und Kreativität treffen. Die Umwandlung komplexer technischer Herausforderungen in elegante Lösungen treibt mich an.",
-      "text3": "Ich gedeihe in kollaborativen Umgebungen, in denen ich Wissen teilen, von anderen lernen und zu bedeutungsvollen Projekten beitragen kann. Ich bin anpassungsfähig und arbeite sowohl vor Ort als auch remote effektiv.",
-      "text4": "Für mich geht es bei der Programmierung nicht nur um das Schreiben von Code – es geht darum, beeindruckende digitale Erlebnisse zu schaffen, die Unternehmen und das Leben der Menschen verbessern. Ich lerne ständig und erforsche neue Möglichkeiten in der Technologie."
-    },
-    "skills": {
-      "title": "Fähigkeiten",
-      "description": "Mein Weg hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend- und Backend-Technologien zu verwenden. Ich bin immer offen für neue Werkzeuge und Methoden, um meine Expertise zu erweitern und in der dynamischen Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
-      "contact": "Benötigen Sie eine andere Fähigkeit?",
-      "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
-    }
+  "portfolio": "Anastasia Sevastianova",
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "contacts": "Kontakte",
+    "about": "Über mich",
+    "skills": "Fähigkeiten"
+  },
+  "header": {
+    "name": "Anastasia Sevastianova",
+    "title": "Fullstack-Entwicklerin",
+    "subtitle": "Mit Leidenschaft für Lernen und Kreation",
+    "work": "Meine Arbeit ansehen",
+    "contact": "Kontaktiere mich"
+  },
+  "about": {
+    "title": "Wer bin ich",
+    "subtitle": "Über mich",
+    "text1": "Hallo, ich bin eine Fullstack-Entwicklerin, die leidenschaftlich daran arbeitet, intuitive, leistungsstarke und skalierbare Webanwendungen zu erstellen. Mein Weg in die Entwicklung begann mit der Neugier, wie Technologie den Alltag vereinfachen und verbessern kann.",
+    "text2": "Ich liebe die Problemlösungsaspekte der Programmierung, bei denen sich Logik und Kreativität treffen. Die Umwandlung komplexer technischer Herausforderungen in elegante Lösungen treibt mich an.",
+    "text3": "Ich gedeihe in kollaborativen Umgebungen, in denen ich Wissen teilen, von anderen lernen und zu bedeutungsvollen Projekten beitragen kann. Ich bin anpassungsfähig und arbeite sowohl vor Ort als auch remote effektiv.",
+    "text4": "Für mich geht es bei der Programmierung nicht nur um das Schreiben von Code – es geht darum, beeindruckende digitale Erlebnisse zu schaffen, die Unternehmen und das Leben der Menschen verbessern. Ich lerne ständig und erforsche neue Möglichkeiten in der Technologie."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "description": "Mein Weg hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend- und Backend-Technologien zu verwenden. Ich bin immer offen für neue Werkzeuge und Methoden, um meine Expertise zu erweitern und in der dynamischen Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "contact": "Benötigen Sie eine andere Fähigkeit?",
+    "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
+  },
+  "project": {
+    "title": "Projekte",
+    "skills": "Fähigkeiten:",
+    "github": "GitHub-Repo",
+    "join": "Projekt beitreten",
+    "next": "Nächstes Projekt"
   }
-  
+}

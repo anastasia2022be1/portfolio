@@ -23,6 +23,7 @@ export const projects = [
         img: project01,
         imgBig: project01Big,
         gitHubLink: 'https://github.com',
+        deployLink: 'https://gaming-streaming.com', // Ссылка на развернутый проект
         id: 1,
     },
     {
@@ -31,6 +32,7 @@ export const projects = [
         img: project02,
         imgBig: project02Big,
         gitHubLink: 'https://github.com',
+        deployLink: 'https://video-service.com',
         id: 2
     },
     {
@@ -39,6 +41,7 @@ export const projects = [
         img: project03,
         imgBig: project03Big,
         gitHubLink: 'https://github.com',
+        deployLink: 'https://video-portal.com',
         id: 3
     },
     {
@@ -47,13 +50,16 @@ export const projects = [
         img: project04,
         imgBig: project04Big,
         gitHubLink: 'https://github.com',
+        deployLink: 'https://dating-app.com',
         id: 4
     },
     {
-        title: 'Landing',
-        skills: 'React, Node.js, MongoDB',
+        title: 'Landing Page',
+        skills: 'HTML5, CSS, JavaScript',
         img: project05,
         imgBig: project05Big,
+        gitHubLink: 'https://github.com/anastasia2022be1/dior',
+        deployLink: 'https://anastasia2022be1.github.io/dior/',
         id: 5
     },
     {
@@ -61,6 +67,8 @@ export const projects = [
         skills: 'React, Node.js, MongoDB',
         img: project06,
         imgBig: project06Big,
+        gitHubLink: 'https://github.com',
+        deployLink: 'https://gaming-community.com',
         id: 6
     }
-]
+];

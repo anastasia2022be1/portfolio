@@ -1,4 +1,4 @@
-import Project from "../components/project/Project.jsx";
+import ProjectCard from "../components/project/ProjectCard.jsx";
 import { projects } from "./../helpers/projectsList.js";
 
 export default function Projects() {
@@ -7,8 +7,8 @@ export default function Projects() {
       <div className="container">
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
-          {projects.map((project, index) => {
-            return <Project key={project.id} title={project.title} img={project.img} index={index} />;
+          {projects.map((project) => {
+            return <ProjectCard key={project.id} title={project.title} img={project.img} id={project.id} />;
           })}
         </ul>
       </div>
