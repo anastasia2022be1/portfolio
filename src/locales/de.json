@@ -28,9 +28,14 @@
     "contact": "Benötigen Sie eine andere Fähigkeit?",
     "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
   },
+  "projects": {
+    "title": "Meine Projekte"
+  },
   "project": {
     "title": "Projekte",
-    "skills": "Fähigkeiten:",
+    "description": "Worum geht es in diesem Projekt?",
+    "skills": "Fähigkeiten",
+    "technologies": "Technologien",
     "github": "GitHub-Repo",
     "join": "Projekt beitreten",
     "next": "Nächstes Projekt"

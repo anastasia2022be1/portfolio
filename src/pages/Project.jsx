@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaInfoCircle, FaCode, FaTools } from "react-icons/fa";
 
 import BtnGitHub from "../components/btnGitHub/BtnGitHub.jsx";
 import BtnJoin from "../components/btnJoin/BtnJoin.jsx";
@@ -9,8 +9,8 @@ import { projects } from "../helpers/projectsList.js";
 
 export default function Project() {
   const { id } = useParams();
-  const projectId = Number(id); 
-  const projectIndex = projects.findIndex((p) => p.id === projectId); 
+  const projectId = Number(id);
+  const projectIndex = projects.findIndex((p) => p.id === projectId);
   const project = projects.find((p) => p.id === projectId);
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ export default function Project() {
   const handleNextProject = () => {
     if (projectIndex < projects.length - 1) {
       const nextProjectId = projects[projectIndex + 1].id;
-      navigate(`/projects/${nextProjectId}`); 
+      navigate(`/projects/${nextProjectId}`);
     }
   };
 
@@ -31,7 +31,7 @@ export default function Project() {
     <main className="section">
       <div className="container">
         <div className="project-details">
-          <h1 className="title-1">{project.title}</h1>
+          <h1 className="title-2">{project.title}</h1>
 
           <img
             src={project.imgBig}
@@ -40,7 +40,30 @@ export default function Project() {
           />
 
           <div className="project-details__desc">
-            <p>{t("project.skills")} {project.skills}</p>
+            <h2 className="title-3">{t("project.details")}</h2>
+
+            <div className="project-info">
+              <FaInfoCircle className="project-info__icon" />
+              <p>
+                <strong>{t("project.description")}: </strong>{" "}
+                {project.description}
+              </p>
+            </div>
+
+            <div className="project-info">
+              <FaCode className="project-info__icon" />
+              <p>
+                <strong>{t("project.skills")}: </strong> {project.skills}
+              </p>
+            </div>
+
+            <div className="project-info">
+              <FaTools className="project-info__icon" />
+              <p>
+                <strong>{t("project.technologies")}: </strong>{" "}
+                {project.technologies}
+              </p>
+            </div>
           </div>
 
           <div className="project-details__buttons">

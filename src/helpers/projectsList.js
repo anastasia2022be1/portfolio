@@ -19,7 +19,9 @@ import project06Big from './../img/projects/06-big.jpg'
 export const projects = [
     {
         title: 'Gaming streaming portal',
-        skills: 'React, Node.js, MongoDB',
+        description: 'Description',
+        skills: 'User authentication, Live streaming, Community engagement',
+        technologies: 'React, Node.js, MongoDB, WebSockets',
         img: project01,
         imgBig: project01Big,
         gitHubLink: 'https://github.com',
@@ -28,7 +30,9 @@ export const projects = [
     },
     {
         title: 'Video service',
-        skills: 'React, PHP, MySQL',
+        description: 'Description',
+        skills: 'Video streaming, User management, Content moderation',
+        technologies: 'React, PHP, MySQL, AWS S3',
         img: project02,
         imgBig: project02Big,
         gitHubLink: 'https://github.com',
@@ -37,7 +41,9 @@ export const projects = [
     },
     {
         title: 'Video portal',
-        skills: 'React, Node.js, MongoDB',
+        description: 'Description',
+        skills: 'Video streaming, User management, Content moderation',
+        technologies: 'React, PHP, MySQL, AWS S3',
         img: project03,
         imgBig: project03Big,
         gitHubLink: 'https://github.com',
@@ -46,7 +52,9 @@ export const projects = [
     },
     {
         title: 'Dating app',
-        skills: 'Vue JS, Node.js, MongoDB',
+        description: 'Description',
+        skills: 'Video streaming, User management, Content moderation',
+        technologies: 'React, PHP, MySQL, AWS S3',
         img: project04,
         imgBig: project04Big,
         gitHubLink: 'https://github.com',
@@ -55,7 +63,9 @@ export const projects = [
     },
     {
         title: 'Landing Page',
-        skills: 'HTML5, CSS, JavaScript',
+        description: 'Description',
+        skills: 'Responsive design, User authentication, Payment processing',
+        technologies: 'HTML5, CSS, JavaScript',
         img: project05,
         imgBig: project05Big,
         gitHubLink: 'https://github.com/anastasia2022be1/dior',
@@ -63,12 +73,13 @@ export const projects = [
         id: 5
     },
     {
-        title: 'Gaming community',
-        skills: 'React, Node.js, MongoDB',
+        title: 'Meal Plan Generator',
+        description: 'An AI-powered meal planning app that generates personalized meal plans based on user preferences and dietary restrictions.',
+        skills: 'AI-driven recommendations, Payment processing, User authentication',
+        technologies: 'Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query',
         img: project06,
         imgBig: project06Big,
-        gitHubLink: 'https://github.com',
-        deployLink: 'https://gaming-community.com',
+        gitHubLink: 'https://github.com/anastasia2022be1/meal-plan',
         id: 6
     }
 ];
