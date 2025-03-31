@@ -18,36 +18,35 @@ import project06Big from './../img/projects/06-big.jpg'
 
 export const projects = [
     {
-        title: 'Gaming streaming portal',
-        description: 'Description',
-        skills: 'User authentication, Live streaming, Community engagement',
-        technologies: 'React, Node.js, MongoDB, WebSockets',
+        title: 'Nutrient App',
+        description: 'A web application to track your diet, explore foods, and manage your weekly meal plan using real-time nutritional data.',
+        skills: 'Food search, Nutrition tracking, Weekly meal planning, LocalStorage management',
+        technologies: 'React, React Router, React Bootstrap, USDA FoodData API, LocalStorage',
         img: project01,
         imgBig: project01Big,
-        gitHubLink: 'https://github.com',
-        deployLink: 'https://gaming-streaming.com', // Ссылка на развернутый проект
+        gitHubLink: 'https://github.com/anastasia2022be1/nutrient-counter',
+        deployLink: 'https://nutrient-app.onrender.com/', 
         id: 1,
     },
     {
-        title: 'Video service',
-        description: 'Description',
-        skills: 'Video streaming, User management, Content moderation',
-        technologies: 'React, PHP, MySQL, AWS S3',
+        title: 'Mehr Blog',
+        description: 'Fullstack blog application with authentication, profile management, image uploads, and post CRUD operations.',
+        skills: 'User authentication, CRUD posts, File upload, Profile editing, REST API, Swagger documentation',
+        technologies: 'React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render',
         img: project02,
         imgBig: project02Big,
-        gitHubLink: 'https://github.com',
-        deployLink: 'https://video-service.com',
+        gitHubLink: 'https://github.com/anastasia2022be1/mehr-blog',
+        deployLink: 'https://mehr-blog-frontend.vercel.app/',
         id: 2
     },
     {
-        title: 'Video portal',
-        description: 'Description',
-        skills: 'Video streaming, User management, Content moderation',
-        technologies: 'React, PHP, MySQL, AWS S3',
+        title: 'Talki- Chat App',
+        description: 'A full-featured chat application with secure real-time messaging, group and private chats, file sharing, emoji reactions, and modern UI themes.',
+        skills: 'Real-time communication, Group and private chats, File uploads, Read receipts, Emoji reactions, Authentication',
+        technologies: 'React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer',
         img: project03,
         imgBig: project03Big,
-        gitHubLink: 'https://github.com',
-        deployLink: 'https://video-portal.com',
+        gitHubLink: 'https://github.com/anastasia2022be1/chat-app',
         id: 3
     },
     {
