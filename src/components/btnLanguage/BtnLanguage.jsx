@@ -1,4 +1,7 @@
 import { useTranslation } from "react-i18next";
+
+import flagEN from "../../assets/icons/en.svg";
+import flagDE from "../../assets/icons/de.svg";
 import "./style.css";
 
 export default function BtnLanguage() {
@@ -15,7 +18,8 @@ export default function BtnLanguage() {
       onClick={toggleLanguage}
       className={`language-btn ${i18n.language === "de" ? "language-btn--active" : ""}`}
     >
-      <span className="language-btn__text">{i18n.language.toUpperCase()}</span>
+      <img src={flagEN} alt="EN" className="language-flag flag-en" />
+      <img src={flagDE} alt="DE" className="language-flag flag-de" />
     </button>
   );
 }

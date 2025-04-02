@@ -1,0 +1,17 @@
+<!-- en.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".7" d="M-85.333 0h682.67v512h-682.67z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+    <g stroke-width="1pt">
+      <path fill="#012169" d="M-256 0H768v512H-256z"/>
+      <path fill="#FFF" d="M-256 0v57.3L615 512h153.1v-57.3L12.3 0H-256zm1023.1 0v57.3L142.1 512H-11V454.7L754.7 0h12.4z"/>
+      <path fill="#C8102E" d="M171.5 0v512h171V0h-171zM-256 170.7v170.6h1024V170.7H-256z"/>
+      <path fill="#FFF" d="M-256 512l341.3-256L-256 0v128l213.3 128L-256 384v128zm1024 0L426.7 256 768 0v128L554.7 256 768 384v128z"/>
+      <path fill="#C8102E" d="M-256 512l384-256-384-256v51.2l307.2 204.8L-256 460.8V512zm1024 0l-384-256 384-256v51.2L460.8 256l307.2 204.8V512z"/>
+    </g>
+  </g>
+</svg>

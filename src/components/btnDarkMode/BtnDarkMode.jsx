@@ -23,13 +23,26 @@ export default function BtnDarkMode() {
     }
   }, [darkMode]);
 
+  // useEffect(() => {
+  //   window
+  //     .matchMedia("(prefers-color-scheme: dark)")
+  //     .addEventListener("change", (event) => {
+  //       const newColorScheme = event.matches ? "dark" : "light";
+  //       setDarkMode(newColorScheme);
+  //     });
+  // }, [setDarkMode]);
+
   useEffect(() => {
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (event) => {
-        const newColorScheme = event.matches ? "dark" : "light";
-        setDarkMode(newColorScheme);
-      });
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  
+    const handleChange = (event) => {
+      const newColorScheme = event.matches ? "dark" : "light";
+      setDarkMode(newColorScheme);
+    };
+  
+    mediaQuery.addEventListener("change", handleChange);
+  
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, [setDarkMode]);
 
   function toggleDarkMode() {

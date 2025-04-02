@@ -135,6 +135,12 @@ body {
   transition: opacity 0.2s ease-in;
 }
 
+.dark .btn-outline {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 .btn-outline:hover {
   opacity: 0.8;
 }
@@ -194,7 +200,7 @@ body {
 }
 
 .about-me__icon {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   font-size: 28px;
   color: var(--accent);
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -208,11 +214,11 @@ body {
 /* 📌 Медиа-запросы для адаптации */
 @media (max-width: 1024px) {
   .about-me__content {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .about-me__block {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 10px;
   }
 }
@@ -224,7 +230,7 @@ body {
   }
 
   .about-me__block {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: left;
     align-items: flex-start;
   }
@@ -235,21 +241,6 @@ body {
 }
 
 /* Skills */
-.skills {
-  padding: 80px 0;
-  background-color: var(--page-bg);
-  color: var(--text-color);
-}
-
-/* Основная структура: flex-контейнер */
-.skills__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-/* Skill Set (Левая часть) */
 .skills {
   padding: 80px 0;
   background-color: var(--page-bg);
@@ -403,36 +394,35 @@ body {
 /* 📌 Медиа-запросы для адаптации */
 @media (max-width: 1024px) {
   .project-card {
-      max-width: 300px;
+    max-width: 300px;
   }
-  
+
   .project-card__img {
-      height: 180px;
+    height: 180px;
   }
 
   .project-card__title {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .projects {
-      grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
+    grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
   }
 
   .project-card {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .project-card__img {
-      height: 160px;
+    height: 160px;
   }
 
   .project-card__title {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
-
 
 /* Project details */
 
@@ -448,9 +438,9 @@ body {
 /* 📌 Универсальный размер для больших изображений проекта */
 .project-details__cover {
   width: 100%;
-  max-width: 800px; 
-  height: 450px; 
-  object-fit: cover; 
+  max-width: 800px;
+  height: 450px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
@@ -458,13 +448,13 @@ body {
 /* 📌 Медиа-запросы для мобильных устройств */
 @media (max-width: 1024px) {
   .project-details__cover {
-    height: 300px; 
+    height: 300px;
   }
 }
 
 @media (max-width: 768px) {
   .project-details__cover {
-    height: 250px; 
+    height: 250px;
   }
 }
 
@@ -506,7 +496,7 @@ body {
 
 /* 📌 Иконки для каждой секции */
 .project-info__icon {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   font-size: 22px;
   color: var(--accent);
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -523,7 +513,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 
 /* 📌 Кнопки под проектом */
 .project-details__buttons {
@@ -558,7 +547,6 @@ body {
 .btn-next svg {
   font-size: 18px;
 }
-
 
 /* Content list */
 
@@ -624,6 +612,20 @@ body {
   .title-2 {
     margin-bottom: 10px;
     font-size: 30px;
+  }
+
+  .title-1,
+  .title-2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Projects */

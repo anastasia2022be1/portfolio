@@ -8,11 +8,13 @@ import Project from "./pages/Project.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
 import Skills from "./pages/Skills.jsx";
 import ScrollToTop from "./utils/scrollToTop.js";
+import BackToTop from "./components/backToTop/BackToTop.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
+
     <div className="App">
       <ScrollToTop />
       <Navbar />
@@ -27,6 +29,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <BackToTop />
     </div>
   );
 }

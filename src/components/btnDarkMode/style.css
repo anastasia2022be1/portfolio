@@ -15,6 +15,11 @@
     background-color: #272727;
 }
 
+.dark-mode-btn:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }  
+
 .dark-mode-btn::before {
     content: "";
 
@@ -39,4 +44,12 @@
 .dark-mode-btn__icon {
     position: relative;
     z-index: 9;
-}
+  }
+  
+  .dark-mode-btn--active .dark-mode-btn__icon:first-child {
+    opacity: 0.3;
+  }
+  .dark-mode-btn:not(.dark-mode-btn--active) .dark-mode-btn__icon:last-child {
+    opacity: 0.3;
+  }
+  
