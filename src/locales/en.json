@@ -39,5 +39,19 @@
     "github": "GitHub Repo",
     "join": "Join Project",
     "next": "Next Project"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "locationTitle": "Location",
+    "emailTitle": "Email"
+  },
+  "form": {
+    "title": "Write me",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "button": "Send Message",
+    "success": "Message sent to Telegram!",
+    "error": "Failed to send message"
   }
 }

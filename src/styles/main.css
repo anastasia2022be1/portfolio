@@ -671,3 +671,71 @@ body {
     width: 28px;
   }
 }
+
+.contact-form {
+  max-width: 570px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid var(--black-border);
+  border-radius: 8px;
+  background-color: var(--project-card-bg);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: center;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid var(--accent);
+  background-color: var(--white);
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark .contact-form button {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.contact-form button:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+@media (max-width: 620px) {
+  .contact-form {
+    margin-top: 40px;
+    gap: 15px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}

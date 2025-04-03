@@ -9,6 +9,8 @@ import AboutMe from "./pages/AboutMe.jsx";
 import Skills from "./pages/Skills.jsx";
 import ScrollToTop from "./utils/scrollToTop.js";
 import BackToTop from "./components/backToTop/BackToTop.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -18,6 +20,8 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Navbar />
+
+      <ToastContainer position="top-center" autoClose={3000} />
 
       <Routes>
         <Route path="/" element={<Home />} />

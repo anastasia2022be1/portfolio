@@ -23,7 +23,7 @@
     font-weight: 700;
   }
   
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     .logo {
       display: none;
     }
@@ -96,8 +96,8 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
-  /* Адаптация < 1024 */
-  @media (max-width: 1023px) {
+  /* Адаптация <= 768 */
+  @media (max-width: 768px) {
     .nav-list {
       position: absolute;
       top: 70px;
