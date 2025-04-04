@@ -1,0 +1,56 @@
+// 🎨 Цвета
+$blackpure: #000;
+$black: #171718;
+$black-border: #26292d;
+$white: #fff;
+$purple: #5c62ec;
+$gray-dark: #252526;
+
+$nav-bg: $black;
+$nav-border: $black-border;
+$nav-text: $white;
+
+$header-bg: $black;
+$header-text: $white;
+
+$footer-bg: $black;
+$footer-text: $white;
+
+// 🌞 Light Mode
+$page-bg-light: $white;
+$text-color-light: $black;
+$accent: $purple;
+$title-1-light: $accent;
+
+$project-card-bg-light: $white;
+$project-card-text-light: $black;
+$box-shadow-light: 0px 5px 35px rgba(0, 0, 0, 0.25);
+
+// 🌚 Dark Mode
+$page-bg-dark: $gray-dark;
+$text-color-dark: $white;
+$title-1-dark: $white;
+
+$project-card-bg-dark: $black;
+$project-card-text-dark: $white;
+$box-shadow-dark: 0px 5px 35px rgba(0, 0, 0, 0.8);
+
+$project-card-bg: $project-card-bg-light;
+$project-card-text: $project-card-text-light;
+$text-color: $text-color-light;
+$page-bg: $page-bg-light;
+$title-1: $title-1-light;
+$box-shadow: $box-shadow-light;
+
+$nav-bg: $black;
+$nav-border: $black-border;
+$nav-text: $white;
+
+$header-bg: $black;
+$header-text: $white;
+
+$footer-bg: $black;
+$footer-text: $white;
+
+$radius: 8px;
+$transition: all 0.3s ease-in-out;

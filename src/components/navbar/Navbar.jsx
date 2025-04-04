@@ -4,8 +4,6 @@ import BtnDarkMode from "../btnDarkMode/BtnDarkMode.jsx";
 import BtnLanguage from "../btnLanguage/BtnLanguage.jsx";
 import { useTranslation } from "react-i18next";
 
-import "./style.css";
-
 export default function Navbar() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);

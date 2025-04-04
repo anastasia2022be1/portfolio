@@ -8,11 +8,11 @@ export default function AboutMe() {
   return (
     <section className="about-me">
       <div className="container">
-        <h2 className="title-2">{t("about.title")}</h2>
+        <h2 className="title-1">{t("about.title")}</h2>
         <div className="about-me__wrapper">
           <img src={myPhoto} alt="Anastasia" className="about-me__photo" />
           <div className="about-me__content">
-            <h3 className="title-3">{t("about.subtitle")}</h3>
+            <h3 className="title-2">{t("about.subtitle")}</h3>
 
             <div className="about-me__block">
               <FaLaptopCode className="about-me__icon" />

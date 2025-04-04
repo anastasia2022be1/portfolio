@@ -1,0 +1,162 @@
+@use "@/styles/variables" as *;
+
+.nav {
+    padding: 20px 0;
+    background-color: $nav-bg;
+    border-bottom: 1px solid $nav-border;
+    color: $nav-text;
+    z-index: 1000;
+    position: relative;
+  
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    &-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    &-list {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+  
+      &__item {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInItem 0.5s forwards ease-in-out;
+      }
+  
+      &__link {
+        color: $nav-text;
+        position: relative;
+        transition: opacity 0.2s ease;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+  
+        &--active::before {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $accent;
+        }
+      }
+  
+      &--open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+    }
+  
+    &-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+      background: none;
+      border: none;
+      cursor: pointer;
+  
+      span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $nav-text;
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+  
+      &.open {
+        span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+  
+        span:nth-child(2) {
+          opacity: 0;
+        }
+  
+        span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+      }
+    }
+  }
+
+  .logo {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: $nav-text;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 1024px) {
+    .logo {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+  
+    .nav-list {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+      background-color: $nav-bg;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+      gap: 10px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-10px);
+      transition: all 0.5s ease;
+    }
+  
+    .nav-list--open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      display: flex; 
+    }
+  
+    .nav-controls {
+      margin-left: auto;
+    }
+  
+    .nav-list__link {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+  
+    .nav-row {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  @keyframes fadeInItem {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

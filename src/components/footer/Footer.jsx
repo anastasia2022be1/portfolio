@@ -1,4 +1,3 @@
-import "./style.css";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
@@ -6,26 +5,24 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer__wrapper">
-          {/* Социальные ссылки */}
           <ul className="social">
             <li className="social__item">
-              <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/anastasia2022be1" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="social__icon" />
               </a>
             </li>
             <li className="social__item">
-              <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/anastasia-sevastianova" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="social__icon" />
               </a>
             </li>
             <li className="social__item">
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:sevastyanova.anastasia1@gmail.com" target="_blank" rel="noopener noreferrer">
                 <FaEnvelope className="social__icon" />
               </a>
             </li>
           </ul>
           
-          {/* Авторские права */}
           <div className="copyright">
             <p>© {new Date().getFullYear()} Anastasiia Sevastianova</p>
           </div>

@@ -1,0 +1,27 @@
+@use "@/styles/variables" as *;
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+  
+  .none {
+    display: none !important;
+  }
+  
+  .section {
+    padding: 70px 0;
+  
+    @media (max-width: 768px) {
+      padding: 40px 0;
+    }
+  }
+  
+  .dark .section {
+    background-color: $page-bg-dark;
+    color: $text-color-dark;
+  }
+  

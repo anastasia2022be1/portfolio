@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 
 import flagEN from "../../assets/icons/en.svg";
 import flagDE from "../../assets/icons/de.svg";
-import "./style.css";
 
 export default function BtnLanguage() {
   const { i18n } = useTranslation();

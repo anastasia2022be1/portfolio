@@ -1,0 +1,22 @@
+// _index.scss
+@forward "reset";
+@forward "variables";
+@forward "base";
+@forward "layout";
+@forward "sections";
+@forward "buttons";
+@forward "about";
+@forward "skills";
+@forward "projects";
+@forward "project-details";
+@forward "contact";
+@forward "responsive";
+@forward "not-found";
+
+// Components
+@forward "components/backToTop";
+@forward "components/btnDarkMode";
+@forward "components/footer";
+@forward "components/header";
+@forward "components/navbar";
+@forward "components/projectCard";

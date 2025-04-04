@@ -1,4 +1,3 @@
-import "./style.css";
 import { FaGithub } from "react-icons/fa";
 
 export default function BtnGitHub({ link }) {

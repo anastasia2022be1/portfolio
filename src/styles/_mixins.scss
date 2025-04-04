@@ -1,0 +1,44 @@
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: 620px) { @content; }
+    } @else if $breakpoint == md {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+      @media (max-width: 1024px) { @content; }
+    } @else if $breakpoint == xl {
+      @media (max-width: 1280px) { @content; }
+    }
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @mixin box-shadow-light {
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  }
+  
+  @mixin box-shadow-dark {
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+  }
+  
+  @mixin transition($props: all, $time: 0.3s, $ease: ease-in-out) {
+    transition: $props $time $ease;
+  }
+  
+  @mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

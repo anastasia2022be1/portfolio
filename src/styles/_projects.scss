@@ -1,0 +1,82 @@
+@use "@/styles/variables" as *;
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-card {
+    max-width: 370px;
+    background-color: $project-card-bg-light;
+    box-shadow: $box-shadow-light;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    &__img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  
+    &__title {
+      padding: 15px 20px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3;
+      color: $project-card-text-light;
+      text-align: center;
+    }
+  }
+  
+  .dark {
+    .project-card {
+      background-color: $project-card-bg-dark;
+      box-shadow: $box-shadow-dark;
+  
+      &__title {
+        color: $project-card-text-dark;
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .project-card {
+      max-width: 300px;
+  
+      &__img {
+        height: 180px;
+      }
+  
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-card {
+      max-width: 100%;
+  
+      &__img {
+        height: 160px;
+      }
+  
+      &__title {
+        font-size: 16px;
+      }
+    }
+  }
+  

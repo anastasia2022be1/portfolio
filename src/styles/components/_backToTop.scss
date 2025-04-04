@@ -1,0 +1,38 @@
+@use "@/styles/variables" as *;
+@use "sass:color";
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+    background-color: $accent;
+    border: none;
+    border-radius: 50%;
+    box-shadow: $box-shadow-light;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: color.adjust($accent, $lightness: -8%);
+      transform: translateY(-3px);
+    }
+  
+    .dark & {
+      box-shadow: $box-shadow-dark;
+    }
+
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 14px;
+        font-size: 16px;
+      }
+    }
+  }
+  

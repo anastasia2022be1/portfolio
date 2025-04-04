@@ -1,0 +1,58 @@
+@use "@/styles/variables" as *;
+
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: $footer-bg;
+    color: $footer-text;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  
+    &__item {
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+  
+      .social__icon {
+        font-size: 30px;
+        color: $accent;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+  
+      &:hover .social__icon {
+        color: $white;
+      }
+    }
+  }
+  
+  .copyright {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+    .social {
+      gap: 15px;
+  
+      &__icon {
+        font-size: 26px;
+      }
+    }
+  }
+  

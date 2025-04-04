@@ -29,7 +29,43 @@
     "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
   },
   "projects": {
-    "title": "Meine Projekte"
+    "title": "Meine Projekte",
+    "project1": {
+      "title": "Dior Landing Page",
+      "description": "Eine elegante und interaktive Landingpage, inspiriert vom GRIS DIOR Duft. Entwickelt mit modernen Webtechnologien, um ein raffiniertes Design, Animationen und ein responsives Layout zu präsentieren.",
+      "skills": "Responsives Layout, DOM-Manipulation, Slider-Integration, UI-Animationen, Akkordeon-Funktionalität",
+      "technologies": "HTML5, CSS3, JavaScript, SwiperJS, Google Fonts"
+    },
+    "project2": {
+      "title": "Wetter-App",
+      "description": "Eine moderne Wetteranwendung mit aktuellen Wetterdaten, Vorhersagen und genauer Ortszeit inklusive Zeitzone und Sommerzeit.",
+      "skills": "API-Integration, Ortszeit-Verarbeitung, Responsives Design, Einheitumschaltung, Geolokalisierung",
+      "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
+    },
+    "project3": {
+      "title": "Nutrion-App",
+      "description": "Eine Webanwendung zur Verfolgung deiner Ernährung, zur Lebensmittelsuche und zur Verwaltung deines wöchentlichen Essensplans mit Echtzeit-Nährwertdaten.",
+      "skills": "Lebensmittelsuche, Nährstoffverfolgung, Essensplanung, LocalStorage-Verwaltung",
+      "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
+    },
+    "project4": {
+      "title": "Mehr Blog",
+      "description": "Ein Fullstack-Blog mit Authentifizierung, Profilverwaltung, Bild-Uploads und CRUD-Funktionalität für Beiträge.",
+      "skills": "Benutzerauthentifizierung, Beiträge bearbeiten, Datei-Upload, Profilbearbeitung, REST API, Swagger-Dokumentation",
+      "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
+    },
+    "project5": {
+      "title": "Talki - Chat App",
+      "description": "Eine funktionsreiche Chat-App mit sicherer Echtzeit-Kommunikation, Gruppen- und Privatnachrichten, Dateifreigabe, Emoji-Reaktionen und modernen UI-Themes.",
+      "skills": "Echtzeit-Kommunikation, Gruppen- & Einzelchats, Datei-Uploads, Lesebestätigungen, Emoji-Reaktionen, Authentifizierung",
+      "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
+    },
+    "project6": {
+      "title": "Meal Plan Generator",
+      "description": "Eine KI-basierte App zur Erstellung personalisierter Ernährungspläne basierend auf deinen Vorlieben und diätetischen Einschränkungen.",
+      "skills": "KI-Empfehlungen, Zahlungsabwicklung, Benutzerauthentifizierung",
+      "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
+    }
   },
   "project": {
     "title": "Projekte",

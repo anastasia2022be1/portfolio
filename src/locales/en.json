@@ -29,29 +29,66 @@
     "contact_link": "Feel free to contact me. I look forward to expanding my knowledge."
   },
   "projects": {
-    "title": "My Projects"
+    "title": "My Projects",
+    "project1": {
+      "title": "Dior Landing Page",
+      "description": "An elegant and interactive landing page inspired by the GRIS DIOR fragrance. Built with modern web technologies to showcase refined design, animations, and responsive layout.",
+      "skills": "Responsive layout, DOM manipulation, Slider integration, UI animations, Accordion functionality",
+      "technologies": "HTML5, CSS3, JavaScript, SwiperJS, Google Fonts"
+    },
+    "project2": {
+      "title": "Weather App",
+      "description": "A modern weather application that displays current weather, forecasts, and accurate local time with timezone and DST support.",
+      "skills": "API integration, Local time handling, Responsive design, Unit switching, Geolocation",
+      "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
+    },
+    "project3": {
+      "title": "Nutrient App",
+      "description": "A web application to track your diet, explore foods, and manage your weekly meal plan using real-time nutritional data.",
+      "skills": "Food search, Nutrition tracking, Weekly meal planning, LocalStorage management",
+      "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
+    },
+    "project4": {
+      "title": "Mehr Blog",
+      "description": "Fullstack blog application with authentication, profile management, image uploads, and post CRUD operations.",
+      "skills": "User authentication, CRUD posts, File upload, Profile editing, REST API, Swagger documentation",
+      "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
+    },
+    "project5": {
+      "title": "Talki- Chat App",
+      "description": "A full-featured chat application with secure real-time messaging, group and private chats, file sharing, emoji reactions, and modern UI themes.",
+      "skills": "Real-time communication, Group and private chats, File uploads, Read receipts, Emoji reactions, Authentication",
+      "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
+    },
+    "project6": {
+      "title": "Meal Plan Generator",
+      "description": "An AI-powered meal planning app that generates personalized meal plans based on user preferences and dietary restrictions.",
+      "skills": "AI-driven recommendations, Payment processing, User authentication",
+      "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
+    }
   },
-  "project": {
-    "title": "Projects",
-    "description": "What is this project about?",
-    "skills": "Skills",
-    "technologies": "Technologies",
-    "github": "GitHub Repo",
-    "join": "Join Project",
-    "next": "Next Project"
-  },
-  "contacts": {
-    "title": "Contacts",
-    "locationTitle": "Location",
-    "emailTitle": "Email"
-  },
-  "form": {
-    "title": "Write me",
-    "name": "Your name",
-    "email": "Your email",
-    "message": "Your message",
-    "button": "Send Message",
-    "success": "Message sent to Telegram!",
-    "error": "Failed to send message"
+    "project": {
+      "title": "Projects",
+      "description": "What is this project about?",
+      "skills": "Skills",
+      "technologies": "Technologies",
+      "github": "GitHub Repo",
+      "join": "Join Project",
+      "next": "Next Project"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "locationTitle": "Location",
+      "emailTitle": "Email"
+    },
+    "form": {
+      "title": "Write me",
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "button": "Send Message",
+      "success": "Message sent to Telegram!",
+      "error": "Failed to send message"
+    }
   }
-}
+

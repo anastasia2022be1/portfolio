@@ -38,21 +38,6 @@ export default function Contacts() {
       <div className="container">
         <h1 className="title-1">{t("contacts.title")}</h1>
 
-        <ul className="content-list">
-          <li className="content-list__item">
-            <h2 className="title-2">{t("contacts.locationTitle")}</h2>
-            <p>Velbert, Germany</p>
-          </li>
-          <li className="content-list__item">
-            <h2 className="title-2">Telegram / WhatsApp</h2>
-            <p><a href="tel:+41111111111">+4 (111) 111-11-11</a></p>
-          </li>
-          <li className="content-list__item">
-            <h2 className="title-2">{t("contacts.emailTitle")}</h2>
-            <p><a href="mailto:sevastyanova.anastasia1@gmail.co">sevastyanova.anastasia1@gmail.com</a></p>
-          </li>
-        </ul>
-
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2 className="title-2">{t("form.title")}</h2>
           <input

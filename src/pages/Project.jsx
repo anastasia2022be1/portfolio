@@ -19,7 +19,6 @@ export default function Project() {
     return <h2>Project not found</h2>;
   }
 
-  // Переход к следующему проекту
   const handleNextProject = () => {
     if (projectIndex < projects.length - 1) {
       const nextProjectId = projects[projectIndex + 1].id;
@@ -31,8 +30,7 @@ export default function Project() {
     <main className="section">
       <div className="container">
         <div className="project-details">
-          <h1 className="title-2">{project.title}</h1>
-
+        <h1 className="title-2">{t(`projects.${project.translationKey}.title`)}</h1>
           <img
             src={project.imgBig}
             alt={project.title}
@@ -45,23 +43,24 @@ export default function Project() {
             <div className="project-info">
               <FaInfoCircle className="project-info__icon" />
               <p>
-                <strong>{t("project.description")}: </strong>{" "}
-                {project.description}
+              <strong>{t("project.description")}:</strong>{" "}
+              {t(`projects.${project.translationKey}.description`)}
               </p>
             </div>
 
             <div className="project-info">
               <FaCode className="project-info__icon" />
               <p>
-                <strong>{t("project.skills")}: </strong> {project.skills}
+              <strong>{t("project.skills")}:</strong>{" "}
+              {t(`projects.${project.translationKey}.skills`)}
               </p>
             </div>
 
             <div className="project-info">
               <FaTools className="project-info__icon" />
               <p>
-                <strong>{t("project.technologies")}: </strong>{" "}
-                {project.technologies}
+              <strong>{t("project.technologies")}:</strong>{" "}
+              {t(`projects.${project.translationKey}.technologies`)}
               </p>
             </div>
           </div>

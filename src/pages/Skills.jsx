@@ -9,16 +9,15 @@ export default function Skills() {
   return (
     <section className="skills">
       <div className="container skills__wrapper">
-        {/* Блок Skill Set (Левая часть) */}
+
         <div className="skills__set">
-          <h2 className="title-2">{t("skills.title")}</h2>
+          <h2 className="title-1">{t("skills.title")}</h2>
           <p>{t("skills.description")}</p>
           <p className="skills__contact">
             {t("skills.contact")} <Link to="/contacts">{t("skills.contact_link")}</Link>
           </p>
         </div>
 
-        {/* Блок с иконками и названиями (Правая часть) */}
         <div className="skills__icons">
           <div className="skill">
             <FaHtml5 className="skill-icon" />

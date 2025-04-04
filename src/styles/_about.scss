@@ -1,0 +1,130 @@
+@use "variables" as *;
+
+.about-me {
+    padding: clamp(40px, 5vw, 80px) 0;
+    background-color: $page-bg-light;
+    color: $text-color-light;
+    text-align: center;
+    overflow-x: hidden;
+  
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+  
+    &__photo {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      aspect-ratio: 1;
+      border-radius: 20%;
+      object-fit: cover;
+      box-shadow: $box-shadow-light;
+    }
+  
+    &__content {
+      max-width: 700px;
+      width: 100%;
+      padding: 20px;
+      background: $project-card-bg-light;
+      border-radius: 10px;
+      box-shadow: $box-shadow-light;
+    }
+  
+    &__block {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding: 12px;
+      border-left: 4px solid $accent;
+      background: rgba($accent, 0.1);
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+  
+      &:hover {
+        background: rgba($accent, 0.2);
+      }
+
+      p {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        margin: 0;
+      }
+    }
+
+      &__block:last-child {
+        margin-bottom: 0;
+      }
+    
+    &__icon {
+      flex-shrink: 0;
+      font-size: 28px;
+      color: $accent;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+      .about-me__block:hover & {
+        transform: scale(1.1);
+        color: $white;
+      }
+    }
+  
+    .dark & {
+      background-color: $page-bg-dark;
+      color: $text-color-dark;
+  
+      &__content {
+        background: $project-card-bg-dark;
+        box-shadow: $box-shadow-dark;
+      }
+  
+      &__block {
+        background: rgba($accent, 0.15);
+      }
+  
+      &__icon {
+        color: $accent;
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .about-me__content {
+      max-width: 100%;
+    }
+  
+    .about-me__block {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-me__photo {
+      max-width: 300px;
+    }
+  
+    .about-me {
+      padding: 60px 0; 
+    }
+
+    .about-me__content {
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .about-me__block {
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .about-me__icon {
+      margin-bottom: 5px;
+    }
+  }
+  

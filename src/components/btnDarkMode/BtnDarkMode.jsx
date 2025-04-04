@@ -4,7 +4,6 @@ import detectDarkMode from "../../utils/detectDarkMode.js";
 
 import sun from "./sun.svg";
 import moon from "./moon.svg";
-import "./style.css";
 
 export default function BtnDarkMode() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", detectDarkMode());
@@ -12,7 +11,7 @@ export default function BtnDarkMode() {
 
   useEffect(() => {
     if (btnRef.current) {
-      // Проверяем, что элемент существует
+      // Check if darkMode is set in localStorage
       if (darkMode === "dark") {
         document.body.classList.add("dark");
         btnRef.current.classList.add("dark-mode-btn--active");
@@ -22,15 +21,6 @@ export default function BtnDarkMode() {
       }
     }
   }, [darkMode]);
-
-  // useEffect(() => {
-  //   window
-  //     .matchMedia("(prefers-color-scheme: dark)")
-  //     .addEventListener("change", (event) => {
-  //       const newColorScheme = event.matches ? "dark" : "light";
-  //       setDarkMode(newColorScheme);
-  //     });
-  // }, [setDarkMode]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./style.css";
 
 export default function ProjectCard({ id, title, img }) {
   if (!id) {

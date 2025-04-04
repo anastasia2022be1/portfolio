@@ -1,0 +1,99 @@
+@use "@/styles/variables" as *;
+
+.contact-form {
+  max-width: 600px;
+  margin: 60px auto 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: $project-card-bg-light;
+  border-radius: $radius;
+  box-shadow: $box-shadow-light;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid $black-border;
+    border-radius: $radius;
+    background-color: transparent;
+    color: $text-color-light;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  button {
+    align-self: center;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: $radius;
+    border: 2px solid $accent;
+    background-color: $white;
+    color: $accent;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: $accent;
+      color: $white;
+    }
+  }
+
+  .dark & {
+    background-color: $project-card-bg-dark;
+    box-shadow: $box-shadow-dark;
+
+    input,
+    textarea {
+      background-color: transparent;
+      color: $text-color-dark;
+      border-color: lighten($black-border, 10%);
+    }
+
+    button {
+      background-color: transparent;
+      color: $white;
+      border-color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $accent;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-top: 40px;
+    padding: 20px;
+    gap: 15px;
+
+    input,
+    textarea {
+      font-size: 14px;
+      padding: 10px 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+}

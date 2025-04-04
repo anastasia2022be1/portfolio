@@ -1,4 +1,3 @@
-import "./style.css";
 import { FaRocket } from "react-icons/fa";
 
 export default function BtnJoin({ link }) {
