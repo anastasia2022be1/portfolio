@@ -44,6 +44,7 @@ export default function Projects() {
               title={t(`projects.${project.translationKey}.title`)} 
               category={t(`projects.categories.${project.category}`)}
               description={t(`projects.${project.translationKey}.description`)}
+              role={t(`projects.${project.translationKey}.role`)}
               technologies={t(`projects.${project.translationKey}.technologies`)}
               img={project.img}
               gitHubLink={project.gitHubLink}

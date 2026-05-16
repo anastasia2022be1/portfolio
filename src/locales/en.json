@@ -11,6 +11,8 @@
     "name": "Anastasia Sevastianova",
     "title": "Fullstack Developer",
     "subtitle": "I build responsive web apps, fullstack products, and practical AI automations",
+    "quickLinksLabel": "Professional links",
+    "cv": "Request CV",
     "work": "Check my work",
     "contact": "Contact me"
   },
@@ -39,37 +41,49 @@
     "project2": {
       "title": "Weather App",
       "description": "Helps users quickly check current weather, forecast, and accurate local time for any city, including timezone and daylight-saving handling. Built with React, API integration, geolocation, unit switching, and resilient user feedback.",
+      "role": "Frontend Developer responsible for the React interface, API integration, data states, responsive layout, and production deployment.",
       "skills": "API integration, Geolocation, Timezone handling, Unit switching, Responsive UI, Error handling",
+      "decisions": "Separated API calls from UI state, used Luxon for reliable timezone logic, added toast feedback for failed requests, and kept city search usable across desktop and mobile.",
       "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
     },
     "project3": {
       "title": "Nutrient App",
       "description": "Solves the everyday problem of understanding meals and nutrition by letting users search foods, track nutrients, and plan meals with real nutritional data. Built as a React SPA with routing, Bootstrap UI, API data, and local persistence.",
+      "role": "Frontend Developer responsible for SPA architecture, routing, data fetching, local persistence, and nutrition planning flows.",
       "skills": "Food search, Nutrition tracking, Weekly meal planning, Client-side persistence, Responsive UI",
+      "decisions": "Used localStorage to keep meal plans available between sessions, structured screens around user tasks, and handled external nutrition data so search results stay understandable.",
       "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
     },
     "project4": {
       "title": "Mehr Blog",
       "description": "Gives authors a complete publishing flow: sign in, manage a profile, upload images, and create, edit, or delete posts through a documented REST API. Built with a React frontend, Node/Express backend, MongoDB, JWT auth, and cloud deployment.",
+      "role": "Fullstack Developer responsible for the React client, Express REST API, MongoDB data model, JWT authentication, image upload flow, and deployment setup.",
       "skills": "User authentication, CRUD posts, File upload, Profile editing, REST API, Swagger documentation",
+      "decisions": "Protected author actions with JWT, documented the API with Swagger, split frontend and backend deployments, and added file-upload handling with clear backend validation.",
       "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
     },
     "project5": {
       "title": "Talki Chat App",
       "description": "Solves real-time communication needs with private and group chats, secure authentication, file sharing, read receipts, reactions, and theme support. Built with a React frontend, Node/Express API, MongoDB, Socket.IO, JWT, and Multer.",
+      "role": "Fullstack Developer responsible for real-time messaging, authentication, chat data modeling, file uploads, and UI state management.",
       "skills": "Real-time communication, Group and private chats, File uploads, Read receipts, Emoji reactions, Authentication",
+      "decisions": "Used Socket.IO for live updates, stored chat history in MongoDB, protected user sessions with JWT, and separated private and group chat flows to keep the interface predictable.",
       "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
     },
     "project6": {
       "title": "Meal Plan Generator",
       "description": "Helps users turn dietary preferences and restrictions into personalized meal plans, with account management and payment-ready product flow. Built with Next.js, TypeScript, PostgreSQL, Prisma, Clerk, Stripe, React Query, and OpenAI API.",
+      "role": "Fullstack Developer responsible for Next.js app structure, typed data flow, Prisma/PostgreSQL modeling, auth, payment-ready flow, and AI API integration.",
       "skills": "AI recommendations, Authentication, Payments, Database modeling, Server-state management",
+      "decisions": "Used TypeScript for safer product logic, Prisma for explicit database modeling, Clerk for authentication, React Query for server-state handling, and OpenAI API prompts tailored to dietary constraints.",
       "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
     },
     "project7": {
       "title": "Enterprise Admin Dashboard",
       "description": "Shows how a business admin interface can organize KPIs, statistics, protected pages, and navigation in a maintainable frontend architecture. Built with React, TypeScript, Redux Toolkit, React Router, Axios, SCSS Modules, and a demo auth flow.",
+      "role": "Frontend Developer responsible for dashboard architecture, protected routing, Redux state slices, reusable UI components, and responsive admin layouts.",
       "skills": "Feature-oriented architecture, Protected routes, Demo auth flow, Redux async states, Responsive dashboard UI, Reusable components",
+      "decisions": "Used Redux Toolkit for predictable async state, React Router for protected pages, SCSS Modules for scoped styling, and feature-oriented folders to keep the dashboard maintainable.",
       "technologies": "React, Vite, TypeScript, React Router, Redux Toolkit, React Redux, Axios, SCSS Modules, ESLint, Prettier"
     }
   },
@@ -77,7 +91,9 @@
     "title": "Projects",
     "details": "Project details",
     "description": "Task",
+    "role": "My role",
     "skills": "Implementation focus",
+    "decisions": "Technical decisions",
     "technologies": "Technologies",
     "github": "GitHub Repo",
     "join": "Live Demo",
@@ -87,6 +103,10 @@
     "title": "Contacts",
     "locationTitle": "Location",
     "emailTitle": "Email",
+    "quickLinksLabel": "Recruiter contact links",
+    "cv": "Request CV",
+    "location": "Germany",
+    "workPermit": "Work authorization details available on request",
     "emailFallback": "Or email me directly:"
   },
   "form": {

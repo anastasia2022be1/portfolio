@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaArrowRight, FaInfoCircle, FaCode, FaTools } from "react-icons/fa";
+import { FaArrowRight, FaInfoCircle, FaCode, FaTools, FaUserTie, FaCogs } from "react-icons/fa";
 
 import BtnGitHub from "../components/btnGitHub/BtnGitHub.jsx";
 import BtnJoin from "../components/btnJoin/BtnJoin.jsx";
@@ -49,10 +49,26 @@ export default function Project() {
             </div>
 
             <div className="project-info">
+              <FaUserTie className="project-info__icon" />
+              <p>
+              <strong>{t("project.role")}:</strong>{" "}
+              {t(`projects.${project.translationKey}.role`)}
+              </p>
+            </div>
+
+            <div className="project-info">
               <FaCode className="project-info__icon" />
               <p>
               <strong>{t("project.skills")}:</strong>{" "}
               {t(`projects.${project.translationKey}.skills`)}
+              </p>
+            </div>
+
+            <div className="project-info">
+              <FaCogs className="project-info__icon" />
+              <p>
+              <strong>{t("project.decisions")}:</strong>{" "}
+              {t(`projects.${project.translationKey}.decisions`)}
               </p>
             </div>
 

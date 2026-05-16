@@ -6,6 +6,7 @@ export default function ProjectCard({
   title,
   category,
   description,
+  role,
   technologies,
   img,
   gitHubLink,
@@ -31,6 +32,7 @@ export default function ProjectCard({
           <h3 className="project-card__title">{title}</h3>
         </Link>
         <p className="project-card__description">{description}</p>
+        <p className="project-card__role">{role}</p>
         <ul className="project-card__stack" aria-label="Technologies">
           {stackItems.map((item) => (
             <li key={item}>{item}</li>
