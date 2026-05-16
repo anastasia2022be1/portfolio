@@ -97,6 +97,7 @@
     "sending": "Wird gesendet...",
     "success": "Nachricht gesendet. Ich antworte bald!",
     "error": "Nachricht konnte nicht gesendet werden",
+    "configError": "Das Kontaktformular ist noch nicht konfiguriert.",
     "timeout": "Der Server antwortet zu langsam. Bitte versuche es erneut oder schreibe mir direkt per E-Mail."
   }
 }

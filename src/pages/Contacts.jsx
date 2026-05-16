@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
-const CONTACT_ENDPOINT = "https://portfolio-wa5a.onrender.com/contact";
+const CONTACT_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 export default function Contacts() {
   const { t } = useTranslation();
@@ -20,16 +20,27 @@ export default function Contacts() {
       return;
     }
 
+    if (!CONTACT_ENDPOINT) {
+      console.error("Missing VITE_FORMSPREE_ENDPOINT environment variable.");
+      toast.error(t("form.configError"));
+      return;
+    }
+
     const message = { ...form };
     setIsSending(true);
-    setForm({ name: "", email: "", message: "" });
-    toast.success(t("form.success"));
 
     fetch(CONTACT_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(message),
-      keepalive: true,
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: message.name,
+        email: message.email,
+        message: message.message,
+        _subject: `Portfolio message from ${message.name}`,
+      }),
     })
       .then(async (response) => {
         const data = await response.json().catch(() => null);
@@ -37,10 +48,12 @@ export default function Contacts() {
         if (!response.ok || data?.success === false) {
           throw new Error("Contact request failed");
         }
+
+        toast.success(t("form.success"));
+        setForm({ name: "", email: "", message: "" });
       })
       .catch(() => {
         toast.error(t("form.error"));
-        setForm(message);
       })
       .finally(() => {
         setIsSending(false);

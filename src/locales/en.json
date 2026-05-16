@@ -97,6 +97,7 @@
     "sending": "Sending...",
     "success": "Message sent. I will reply soon!",
     "error": "Failed to send message",
+    "configError": "Contact form is not configured yet.",
     "timeout": "The server is taking too long to respond. Please try again or email me directly."
   }
 }
