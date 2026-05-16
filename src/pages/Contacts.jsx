@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
-import { FaFileAlt, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPassport } from "react-icons/fa";
 import { profileLinks } from "../utils/profileLinks.js";
 
 const CONTACT_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
@@ -66,29 +65,6 @@ export default function Contacts() {
     <main className="section">
       <div className="container">
         <h1 className="title-1">{t("contacts.title")}</h1>
-
-        <section className="contact-links" aria-label={t("contacts.quickLinksLabel")}>
-          <a href={profileLinks.cvRequest} className="contact-links__item">
-            <FaFileAlt />
-            <span>{t("contacts.cv")}</span>
-          </a>
-          <a href={profileLinks.linkedin} target="_blank" rel="noopener noreferrer" className="contact-links__item">
-            <FaLinkedin />
-            <span>LinkedIn</span>
-          </a>
-          <a href={profileLinks.github} target="_blank" rel="noopener noreferrer" className="contact-links__item">
-            <FaGithub />
-            <span>GitHub</span>
-          </a>
-          <div className="contact-links__item">
-            <FaMapMarkerAlt />
-            <span>{t("contacts.location")}</span>
-          </div>
-          <div className="contact-links__item">
-            <FaPassport />
-            <span>{t("contacts.workPermit")}</span>
-          </div>
-        </section>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2 className="title-2">{t("form.title")}</h2>

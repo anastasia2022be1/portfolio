@@ -11,8 +11,6 @@
     "name": "Anastasia Sevastianova",
     "title": "Fullstack Developer",
     "subtitle": "I build responsive web apps, fullstack products, and practical AI automations",
-    "quickLinksLabel": "Professional links",
-    "cv": "Request CV",
     "work": "Check my work",
     "contact": "Contact me"
   },
@@ -103,10 +101,6 @@
     "title": "Contacts",
     "locationTitle": "Location",
     "emailTitle": "Email",
-    "quickLinksLabel": "Recruiter contact links",
-    "cv": "Request CV",
-    "location": "Germany",
-    "workPermit": "Work authorization details available on request",
     "emailFallback": "Or email me directly:"
   },
   "form": {
