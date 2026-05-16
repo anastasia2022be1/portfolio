@@ -2,53 +2,49 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
+const CONTACT_ENDPOINT = "https://portfolio-wa5a.onrender.com/contact";
+
 export default function Contacts() {
   const { t } = useTranslation();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (isSubmitting) {
+    if (isSending) {
       return;
     }
 
-    const controller = new AbortController();
-    const timeoutId = window.setTimeout(() => controller.abort(), 15000);
-    setIsSubmitting(true);
+    const message = { ...form };
+    setIsSending(true);
+    setForm({ name: "", email: "", message: "" });
+    toast.success(t("form.success"));
 
-    try {
-        const response = await fetch("https://portfolio-wa5a.onrender.com/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-          signal: controller.signal,
-        });
-  
-        const data = await response.json();
-  
-        if (data.success) {
-          toast.success(t("form.success"));
-          setForm({ name: "", email: "", message: "" });
-        } else {
-          toast.error(t("form.error"));
-        }
-      } catch (error) {
-        if (error.name === "AbortError") {
-          toast.error(t("form.timeout"));
-          return;
-        }
+    fetch(CONTACT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(message),
+      keepalive: true,
+    })
+      .then(async (response) => {
+        const data = await response.json().catch(() => null);
 
+        if (!response.ok || data?.success === false) {
+          throw new Error("Contact request failed");
+        }
+      })
+      .catch(() => {
         toast.error(t("form.error"));
-      } finally {
-        window.clearTimeout(timeoutId);
-        setIsSubmitting(false);
-      }
+        setForm(message);
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
@@ -81,8 +77,8 @@ export default function Contacts() {
             value={form.message}
             onChange={handleChange}
           />
-          <button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? t("form.sending") : t("form.button")}
+          <button type="submit" disabled={isSending}>
+            {isSending ? t("form.sending") : t("form.button")}
           </button>
         </form>
       </div>

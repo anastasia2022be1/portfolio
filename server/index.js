@@ -11,38 +11,48 @@ app.use(express.json());
 
 const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = process.env;
 
-app.post("/contact", async (req, res) => {
+app.get("/health", (req, res) => {
+  res.status(200).json({ success: true, message: "OK" });
+});
+
+app.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
 
-  const text = `
-📨 New message:
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false, message: "Missing fields." });
+  }
 
-👤 Name: ${name}
-📧 Email: ${email}
-💬 Message: ${message}
-  `;
+  const text = [
+    "New portfolio message:",
+    "",
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Message: ${message}`,
+  ].join("\n");
 
-  try {
-    await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-      chat_id: TELEGRAM_CHAT_ID,
-      text,
-    }, {
-      timeout: 10000,
-    });
+  res.status(202).json({ success: true, message: "Message accepted" });
 
-    res.status(200).json({ success: true, message: "Message send" });
-  } catch (error) {
-    if (error.response) {
+  axios
+    .post(
+      `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+      {
+        chat_id: TELEGRAM_CHAT_ID,
+        text,
+      },
+      {
+        timeout: 10000,
+      },
+    )
+    .catch((error) => {
+      if (error.response) {
         console.error("Telegram API error:", error.response.data);
       } else {
         console.error("Unknown error:", error.message);
       }
-    
-      res.status(500).json({ success: false, message: "Error sending." });
-  }
+    });
 });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`🚀 Server: http://localhost:${PORT}`);
+  console.log(`Server: http://localhost:${PORT}`);
 });
