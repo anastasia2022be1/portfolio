@@ -22,9 +22,9 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          
+
           <div className="copyright">
-            <p>© {new Date().getFullYear()} Anastasiia Sevastianova</p>
+            <p>© {new Date().getFullYear()} Anastasia Sevastianova</p>
           </div>
         </div>
       </div>

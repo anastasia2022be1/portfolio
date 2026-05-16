@@ -38,6 +38,12 @@ Best regards,
 Anastasia Sevastianova
 ```
 
-## 4. Optional cleanup
+## 4. Gmail automation
 
-After Formspree is live, the old Render contact backend can be removed or left unused.
+If you want an additional Gmail-based auto-reply workflow, follow:
+
+```txt
+GMAIL_AUTOREPLY_SETUP.md
+```
+
+The previous Telegram/Express backend has been removed from this repository. The contact form now uses Formspree directly.

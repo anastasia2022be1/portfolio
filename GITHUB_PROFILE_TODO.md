@@ -1,5 +1,9 @@
 # GitHub profile cleanup
 
+Profile README draft is ready in `GITHUB_PROFILE_README.md`.
+
+Use this checklist in GitHub UI for the items that cannot be changed from the portfolio repository itself: profile bio, pinned repositories, repository descriptions, and repository topics.
+
 ## Profile bio
 
 Current bio is already strong:

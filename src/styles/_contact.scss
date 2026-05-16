@@ -60,6 +60,24 @@
     }
   }
 
+  &__fallback {
+    margin: 0;
+    text-align: center;
+    color: $text-color-light;
+    font-size: 15px;
+    line-height: 1.5;
+
+    a {
+      color: $accent;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .dark & {
     background-color: $project-card-bg-dark;
     box-shadow: $box-shadow-dark;
@@ -80,6 +98,10 @@
         background-color: $white;
         color: $accent;
       }
+    }
+
+    .contact-form__fallback {
+      color: $text-color-dark;
     }
   }
 }

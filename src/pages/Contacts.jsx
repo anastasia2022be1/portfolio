@@ -93,6 +93,12 @@ export default function Contacts() {
           <button type="submit" disabled={isSending}>
             {isSending ? t("form.sending") : t("form.button")}
           </button>
+          <p className="contact-form__fallback">
+            {t("contacts.emailFallback")}{" "}
+            <a href="mailto:sevastyanova.anastasia1@gmail.com">
+              sevastyanova.anastasia1@gmail.com
+            </a>
+          </p>
         </form>
       </div>
     </main>

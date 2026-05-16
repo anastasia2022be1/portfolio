@@ -86,7 +86,8 @@
   "contacts": {
     "title": "Contacts",
     "locationTitle": "Location",
-    "emailTitle": "Email"
+    "emailTitle": "Email",
+    "emailFallback": "Or email me directly:"
   },
   "form": {
     "title": "Write me",

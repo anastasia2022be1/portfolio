@@ -1,60 +1,54 @@
-# 💼 Anastasiia Sevastianova Portfolio
+# Anastasia Sevastianova Portfolio
 
-Hi! I'm **Anastasiia**, a passionate Fullstack Developer based in Germany 🇩🇪  
-This is my personal portfolio where I showcase my latest projects, skills, and contact information.
+Personal portfolio for a Fullstack Developer based in Germany. It showcases selected frontend and fullstack projects, skills, contact options, and multilingual content.
 
----
+## Live demo
 
-## 🔗 Live Demo
+[Open portfolio](https://portfolio-two-jade-83.vercel.app/)
 
-👉 [Deploy](https://portfolio-two-jade-83.vercel.app/)
+## Tech stack
 
----
+- Frontend: React, Vite, SCSS
+- Routing: React Router DOM
+- i18n: react-i18next with English and German
+- UI states: responsive layout, dark mode, project filters, toast notifications
+- Contact form: Formspree
+- Deployment: Vercel
 
-## 🚀 Tech Stack
+## Pages
 
-- **Frontend:** React, Vite, SCSS (Modular, `@use`/`@forward`)
-- **Styling:** CSS Variables, Responsive Design, Dark Mode
-- **i18n:** `react-i18next` (EN / DE support)
-- **Notifications:** React Toastify
-- **Animation:** Scroll reveal, transitions
-- **Email:** Contact form integrated with API
-- **Deployment:** Vercel
+- `/` - Home
+- `/about-me` - About me
+- `/skills` - Skill set
+- `/projects` - Project list with category filters
+- `/projects/:id` - Project details
+- `/contacts` - Contact form with direct email fallback
 
----
+## Preview
 
-## 📁 Pages
+![Portfolio screenshot](image.png)
 
-- `/` – Home (intro, CTA)
-- `/about-me` – About Me with custom icons and animated sections
-- `/skills` – Technologies & Stack
-- `/projects` – List of projects with filters and links
-- `/projects/:id` – Project detail page with multi-language support
-- `/contacts` – Contact form with validation + success/error toast
+## Contact automation
 
----
+The public contact form uses Formspree. Optional Gmail auto-reply setup is documented in:
 
-## 📷 Preview
+```txt
+GMAIL_AUTOREPLY_SETUP.md
+```
 
-![Portfolio Screenshot](image.png)
+The previous Telegram/Express contact backend has been removed to avoid confusion.
 
----
+## GitHub profile
 
-## 📬 Contact
-Feel free to reach out:
+Repository descriptions, topics, pinned repositories, and a profile README draft are documented in:
+
+```txt
+GITHUB_PROFILE_TODO.md
+GITHUB_PROFILE_README.md
+```
+
+## Contact
 
 - Email: sevastyanova.anastasia1@gmail.com
-
 - GitHub: [@anastasia2022be1](https://github.com/anastasia2022be1)
-
-- LinkedIn: [Anastasiia Sevastianova](https://www.linkedin.com/in/anastasia-sevastianova)
-
----
-## 🧭 Routing
-All routing is handled via **React Router DOM**
-404 routes are redirected to a custom 404.html page in public/
-
----
-## 🌍 Languages
-🌐 Supports English and German
-Language switch is available in the navbar via flag icon.
+- LinkedIn: [Anastasia Sevastianova](https://www.linkedin.com/in/anastasia-sevastianova)

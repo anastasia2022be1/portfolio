@@ -45,7 +45,11 @@ export default function Projects() {
               category={t(`projects.categories.${project.category}`)}
               description={t(`projects.${project.translationKey}.description`)}
               technologies={t(`projects.${project.translationKey}.technologies`)}
-              img={project.img} 
+              img={project.img}
+              gitHubLink={project.gitHubLink}
+              deployLink={project.deployLink}
+              codeLabel={t("project.github")}
+              liveLabel={t("project.join")}
             />
           ))}
         </ul>
