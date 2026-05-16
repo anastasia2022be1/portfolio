@@ -4,8 +4,8 @@
     "home": "Startseite",
     "projects": "Projekte",
     "contacts": "Kontakt",
-    "about": "Ueber mich",
-    "skills": "Faehigkeiten"
+    "about": "Über mich",
+    "skills": "Fähigkeiten"
   },
   "header": {
     "name": "Anastasia Sevastianova",
@@ -16,16 +16,16 @@
   },
   "about": {
     "title": "Wer bin ich",
-    "subtitle": "Ueber mich",
+    "subtitle": "Über mich",
     "text1": "Hallo, ich bin eine Fullstack-Entwicklerin, die intuitive, performante und skalierbare Webanwendungen baut. Mein Weg in die Entwicklung begann mit der Neugier, wie Technologie den Alltag vereinfachen und verbessern kann.",
-    "text2": "Ich mag den problemloesenden Teil der Programmierung, bei dem Logik und Kreativitaet zusammenkommen. Komplexe technische Aufgaben in klare Loesungen zu verwandeln, motiviert mich.",
+    "text2": "Ich mag den problemlösenden Teil der Programmierung, bei dem Logik und Kreativität zusammenkommen. Komplexe technische Aufgaben in klare Lösungen zu verwandeln, motiviert mich.",
     "text3": "Ich arbeite gern in kollaborativen Umgebungen, teile Wissen, lerne von anderen und trage zu sinnvollen Projekten bei. Ich arbeite effektiv vor Ort und remote.",
-    "text4": "Programmieren bedeutet fuer mich nicht nur Code zu schreiben. Es bedeutet, nuetzliche digitale Erfahrungen zu schaffen, die Menschen und Unternehmen weiterhelfen."
+    "text4": "Programmieren bedeutet für mich nicht nur Code zu schreiben. Es bedeutet, nützliche digitale Erfahrungen zu schaffen, die Menschen und Unternehmen weiterhelfen."
   },
   "skills": {
-    "title": "Faehigkeiten",
-    "description": "Meine Projekte verbinden Frontend-Umsetzung, Fullstack-Architektur, API-Integration, Authentifizierung, Datenbanken und Automatisierung. Ich fokussiere mich auf klare, wartbare Produkte, die praktische Nutzerprobleme loesen.",
-    "contact": "Benotigen Sie eine andere Faehigkeit?",
+    "title": "Fähigkeiten",
+    "description": "Meine Projekte verbinden Frontend-Umsetzung, Fullstack-Architektur, API-Integration, Authentifizierung, Datenbanken und Automatisierung. Ich fokussiere mich auf klare, wartbare Produkte, die praktische Nutzerprobleme lösen.",
+    "contact": "Benötigen Sie eine andere Fähigkeit?",
     "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
   },
   "projects": {
@@ -38,50 +38,50 @@
     },
     "project2": {
       "title": "Wetter-App",
-      "description": "Hilft Nutzern, aktuelles Wetter, Vorhersagen und genaue Ortszeit fuer jede Stadt schnell zu pruefen, inklusive Zeitzonen und Sommerzeit. Entwickelt mit React, API-Integration, Geolokalisierung, Einheitenwechsel und klarem Nutzerfeedback.",
-      "role": "Frontend-Entwicklerin verantwortlich fuer React-UI, API-Integration, Datenzustaende, responsives Layout und Production Deployment.",
+      "description": "Hilft Nutzern, aktuelles Wetter, Vorhersagen und genaue Ortszeit für jede Stadt schnell zu prüfen, inklusive Zeitzonen und Sommerzeit. Entwickelt mit React, API-Integration, Geolokalisierung, Einheitenwechsel und klarem Nutzerfeedback.",
+      "role": "Frontend-Entwicklerin verantwortlich für React-UI, API-Integration, Datenzustände, responsives Layout und Production Deployment.",
       "skills": "API-Integration, Geolokalisierung, Zeitzonenlogik, Einheitenwechsel, Responsives UI, Fehlerbehandlung",
-      "decisions": "API-Aufrufe von UI-State getrennt, Luxon fuer verlaessliche Zeitzonenlogik genutzt, Toast-Feedback fuer fehlgeschlagene Requests ergaenzt und die Stadtsuche fuer Desktop und Mobile optimiert.",
+      "decisions": "API-Aufrufe von UI-State getrennt, Luxon für verlässliche Zeitzonenlogik genutzt, Toast-Feedback für fehlgeschlagene Requests ergänzt und die Stadtsuche für Desktop und Mobile optimiert.",
       "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
     },
     "project3": {
       "title": "Nutrient App",
-      "description": "Loest das Alltagsproblem, Mahlzeiten und Naehrwerte besser zu verstehen: Nutzer koennen Lebensmittel suchen, Naehrstoffe verfolgen und Mahlzeiten mit echten Daten planen. Entwickelt als React SPA mit Routing, Bootstrap UI, API-Daten und lokaler Speicherung.",
-      "role": "Frontend-Entwicklerin verantwortlich fuer SPA-Architektur, Routing, Data Fetching, lokale Speicherung und Meal-Planning-Flows.",
-      "skills": "Lebensmittelsuche, Naehrstofftracking, Wochenplanung, Lokale Speicherung, Responsives UI",
-      "decisions": "localStorage genutzt, damit Plaene zwischen Sessions erhalten bleiben, Screens nach Nutzeraufgaben strukturiert und externe Naehrwertdaten so verarbeitet, dass Suchergebnisse klar bleiben.",
+      "description": "Löst das Alltagsproblem, Mahlzeiten und Nährwerte besser zu verstehen: Nutzer können Lebensmittel suchen, Nährstoffe verfolgen und Mahlzeiten mit echten Daten planen. Entwickelt als React SPA mit Routing, Bootstrap UI, API-Daten und lokaler Speicherung.",
+      "role": "Frontend-Entwicklerin verantwortlich für SPA-Architektur, Routing, Data Fetching, lokale Speicherung und Meal-Planning-Flows.",
+      "skills": "Lebensmittelsuche, Nährstofftracking, Wochenplanung, Lokale Speicherung, Responsives UI",
+      "decisions": "localStorage genutzt, damit Pläne zwischen Sessions erhalten bleiben, Screens nach Nutzeraufgaben strukturiert und externe Nährwertdaten so verarbeitet, dass Suchergebnisse klar bleiben.",
       "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
     },
     "project4": {
       "title": "Mehr Blog",
-      "description": "Bietet Autoren einen kompletten Publishing-Flow: anmelden, Profil verwalten, Bilder hochladen und Beitraege ueber eine dokumentierte REST API erstellen, bearbeiten oder loeschen. Entwickelt mit React, Node/Express, MongoDB, JWT und Cloud Deployment.",
-      "role": "Fullstack-Entwicklerin verantwortlich fuer React Client, Express REST API, MongoDB-Datenmodell, JWT-Authentifizierung, Image Upload und Deployment Setup.",
-      "skills": "Benutzerauthentifizierung, CRUD fuer Beitraege, Datei-Upload, Profilbearbeitung, REST API, Swagger-Dokumentation",
-      "decisions": "Author-Aktionen mit JWT geschuetzt, API mit Swagger dokumentiert, Frontend und Backend getrennt deployed und File Upload mit klarer Backend-Validierung umgesetzt.",
+      "description": "Bietet Autoren einen kompletten Publishing-Flow: anmelden, Profil verwalten, Bilder hochladen und Beiträge über eine dokumentierte REST API erstellen, bearbeiten oder löschen. Entwickelt mit React, Node/Express, MongoDB, JWT und Cloud Deployment.",
+      "role": "Fullstack-Entwicklerin verantwortlich für React Client, Express REST API, MongoDB-Datenmodell, JWT-Authentifizierung, Image Upload und Deployment Setup.",
+      "skills": "Benutzerauthentifizierung, CRUD für Beiträge, Datei-Upload, Profilbearbeitung, REST API, Swagger-Dokumentation",
+      "decisions": "Author-Aktionen mit JWT geschützt, API mit Swagger dokumentiert, Frontend und Backend getrennt deployed und File Upload mit klarer Backend-Validierung umgesetzt.",
       "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
     },
     "project5": {
       "title": "Talki Chat App",
-      "description": "Loest Kommunikationsbedarf in Echtzeit mit privaten Chats, Gruppenchats, sicherer Authentifizierung, Dateifreigabe, Lesebestaetigungen, Reaktionen und Theme-Support. Entwickelt mit React, Node/Express, MongoDB, Socket.IO, JWT und Multer.",
-      "role": "Fullstack-Entwicklerin verantwortlich fuer Real-Time Messaging, Authentifizierung, Chat-Datenmodell, File Uploads und UI-State-Management.",
-      "skills": "Echtzeit-Kommunikation, Gruppen- und Einzelchats, Datei-Uploads, Lesebestaetigungen, Emoji-Reaktionen, Authentifizierung",
-      "decisions": "Socket.IO fuer Live-Updates genutzt, Chat-Historie in MongoDB gespeichert, User Sessions mit JWT geschuetzt und private sowie Gruppenchat-Flows getrennt gehalten.",
+      "description": "Löst Kommunikationsbedarf in Echtzeit mit privaten Chats, Gruppenchats, sicherer Authentifizierung, Dateifreigabe, Lesebestätigungen, Reaktionen und Theme-Support. Entwickelt mit React, Node/Express, MongoDB, Socket.IO, JWT und Multer.",
+      "role": "Fullstack-Entwicklerin verantwortlich für Real-Time Messaging, Authentifizierung, Chat-Datenmodell, File Uploads und UI-State-Management.",
+      "skills": "Echtzeit-Kommunikation, Gruppen- und Einzelchats, Datei-Uploads, Lesebestätigungen, Emoji-Reaktionen, Authentifizierung",
+      "decisions": "Socket.IO für Live-Updates genutzt, Chat-Historie in MongoDB gespeichert, User Sessions mit JWT geschützt und private sowie Gruppenchat-Flows getrennt gehalten.",
       "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
     },
     "project6": {
       "title": "Meal Plan Generator",
-      "description": "Hilft Nutzern, Vorlieben und Einschraenkungen in personalisierte Ernaehrungsplaene umzuwandeln, inklusive Account-Management und zahlungsbereitem Produktflow. Entwickelt mit Next.js, TypeScript, PostgreSQL, Prisma, Clerk, Stripe, React Query und OpenAI API.",
-      "role": "Fullstack-Entwicklerin verantwortlich fuer Next.js-App-Struktur, typisierten Datenfluss, Prisma/PostgreSQL-Modellierung, Auth, payment-ready Flow und AI API Integration.",
+      "description": "Hilft Nutzern, Vorlieben und Einschränkungen in personalisierte Ernährungspläne umzuwandeln, inklusive Account-Management und zahlungsbereitem Produktflow. Entwickelt mit Next.js, TypeScript, PostgreSQL, Prisma, Clerk, Stripe, React Query und OpenAI API.",
+      "role": "Fullstack-Entwicklerin verantwortlich für Next.js-App-Struktur, typisierten Datenfluss, Prisma/PostgreSQL-Modellierung, Auth, payment-ready Flow und AI API Integration.",
       "skills": "KI-Empfehlungen, Authentifizierung, Payments, Datenbankmodellierung, Server-State-Management",
-      "decisions": "TypeScript fuer sicherere Produktlogik, Prisma fuer explizite Datenbankmodelle, Clerk fuer Authentifizierung, React Query fuer Server State und OpenAI-Prompts fuer Ernaehrungseinschraenkungen genutzt.",
+      "decisions": "TypeScript für sicherere Produktlogik, Prisma für explizite Datenbankmodelle, Clerk für Authentifizierung, React Query für Server State und OpenAI-Prompts für Ernährungseinschränkungen genutzt.",
       "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
     },
     "project7": {
       "title": "Enterprise Admin Dashboard",
-      "description": "Zeigt, wie ein Business-Admin-Interface KPIs, Statistiken, geschuetzte Seiten und Navigation in einer wartbaren Frontend-Architektur organisiert. Entwickelt mit React, TypeScript, Redux Toolkit, React Router, Axios, SCSS Modules und Demo-Auth-Flow.",
-      "role": "Frontend-Entwicklerin verantwortlich fuer Dashboard-Architektur, geschuetzte Routen, Redux State Slices, wiederverwendbare UI-Komponenten und responsive Admin-Layouts.",
-      "skills": "Feature-orientierte Architektur, Geschuetzte Routen, Demo-Auth-Flow, Redux-Async-States, Responsives Dashboard-UI, Wiederverwendbare Komponenten",
-      "decisions": "Redux Toolkit fuer vorhersagbaren Async State, React Router fuer geschuetzte Seiten, SCSS Modules fuer scoped Styling und feature-orientierte Ordner fuer Wartbarkeit genutzt.",
+      "description": "Zeigt, wie ein Business-Admin-Interface KPIs, Statistiken, geschützte Seiten und Navigation in einer wartbaren Frontend-Architektur organisiert. Entwickelt mit React, TypeScript, Redux Toolkit, React Router, Axios, SCSS Modules und Demo-Auth-Flow.",
+      "role": "Frontend-Entwicklerin verantwortlich für Dashboard-Architektur, geschützte Routen, Redux State Slices, wiederverwendbare UI-Komponenten und responsive Admin-Layouts.",
+      "skills": "Feature-orientierte Architektur, Geschützte Routen, Demo-Auth-Flow, Redux-Async-States, Responsives Dashboard-UI, Wiederverwendbare Komponenten",
+      "decisions": "Redux Toolkit für vorhersagbaren Async State, React Router für geschützte Seiten, SCSS Modules für scoped Styling und feature-orientierte Ordner für Wartbarkeit genutzt.",
       "technologies": "React, Vite, TypeScript, React Router, Redux Toolkit, React Redux, Axios, SCSS Modules, ESLint, Prettier"
     }
   },
@@ -95,7 +95,7 @@
     "technologies": "Technologien",
     "github": "GitHub-Repo",
     "join": "Live Demo",
-    "next": "Naechstes Projekt"
+    "next": "Nächstes Projekt"
   },
   "contacts": {
     "title": "Kontakt",
