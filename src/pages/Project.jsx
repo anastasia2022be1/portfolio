@@ -33,7 +33,7 @@ export default function Project() {
         <h1 className="title-2">{t(`projects.${project.translationKey}.title`)}</h1>
           <img
             src={project.imgBig}
-            alt={project.title}
+            alt={t(`projects.${project.translationKey}.title`)}
             className="project-details__cover"
           />
 

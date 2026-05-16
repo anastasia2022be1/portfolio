@@ -4,77 +4,84 @@
     "home": "Startseite",
     "projects": "Projekte",
     "contacts": "Kontakte",
-    "about": "Über mich",
-    "skills": "Fähigkeiten"
+    "about": "Ueber mich",
+    "skills": "Faehigkeiten"
   },
   "header": {
     "name": "Anastasia Sevastianova",
     "title": "Fullstack-Entwicklerin",
-    "subtitle": "Mit Leidenschaft für Lernen und Kreation",
+    "subtitle": "Ich entwickle responsive Web-Apps, Fullstack-Produkte und praktische KI-Automatisierungen",
     "work": "Meine Arbeit ansehen",
     "contact": "Kontaktiere mich"
   },
   "about": {
     "title": "Wer bin ich",
-    "subtitle": "Über mich",
-    "text1": "Hallo, ich bin eine Fullstack-Entwicklerin, die leidenschaftlich daran arbeitet, intuitive, leistungsstarke und skalierbare Webanwendungen zu erstellen. Mein Weg in die Entwicklung begann mit der Neugier, wie Technologie den Alltag vereinfachen und verbessern kann.",
-    "text2": "Ich liebe die Problemlösungsaspekte der Programmierung, bei denen sich Logik und Kreativität treffen. Die Umwandlung komplexer technischer Herausforderungen in elegante Lösungen treibt mich an.",
-    "text3": "Ich gedeihe in kollaborativen Umgebungen, in denen ich Wissen teilen, von anderen lernen und zu bedeutungsvollen Projekten beitragen kann. Ich bin anpassungsfähig und arbeite sowohl vor Ort als auch remote effektiv.",
-    "text4": "Für mich geht es bei der Programmierung nicht nur um das Schreiben von Code – es geht darum, beeindruckende digitale Erlebnisse zu schaffen, die Unternehmen und das Leben der Menschen verbessern. Ich lerne ständig und erforsche neue Möglichkeiten in der Technologie."
+    "subtitle": "Ueber mich",
+    "text1": "Hallo, ich bin eine Fullstack-Entwicklerin, die intuitive, performante und skalierbare Webanwendungen baut. Mein Weg in die Entwicklung begann mit der Neugier, wie Technologie den Alltag vereinfachen und verbessern kann.",
+    "text2": "Ich mag den problemloesenden Teil der Programmierung, bei dem Logik und Kreativitaet zusammenkommen. Komplexe technische Aufgaben in klare Loesungen zu verwandeln, motiviert mich.",
+    "text3": "Ich arbeite gern in kollaborativen Umgebungen, teile Wissen, lerne von anderen und trage zu sinnvollen Projekten bei. Ich arbeite effektiv vor Ort und remote.",
+    "text4": "Programmieren bedeutet fuer mich nicht nur Code zu schreiben. Es bedeutet, nuetzliche digitale Erfahrungen zu schaffen, die Menschen und Unternehmen weiterhelfen."
   },
   "skills": {
-    "title": "Fähigkeiten",
-    "description": "Mein Weg hat mich dazu gebracht, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend- und Backend-Technologien zu verwenden. Ich bin immer offen für neue Werkzeuge und Methoden, um meine Expertise zu erweitern und in der dynamischen Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
-    "contact": "Benötigen Sie eine andere Fähigkeit?",
+    "title": "Faehigkeiten",
+    "description": "Meine Projekte verbinden Frontend-Umsetzung, Fullstack-Architektur, API-Integration, Authentifizierung, Datenbanken und Automatisierung. Ich fokussiere mich auf klare, wartbare Produkte, die praktische Nutzerprobleme loesen.",
+    "contact": "Benoetigen Sie eine andere Faehigkeit?",
     "contact_link": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern."
   },
   "projects": {
     "title": "Meine Projekte",
-    "project1": {
-      "title": "Dior Landing Page",
-      "description": "Eine elegante und interaktive Landingpage, inspiriert vom GRIS DIOR Duft. Entwickelt mit modernen Webtechnologien, um ein raffiniertes Design, Animationen und ein responsives Layout zu präsentieren.",
-      "skills": "Responsives Layout, DOM-Manipulation, Slider-Integration, UI-Animationen, Akkordeon-Funktionalität",
-      "technologies": "HTML5, CSS3, JavaScript, SwiperJS, Google Fonts"
+    "filterLabel": "Projekte nach Kategorie filtern",
+    "categories": {
+      "all": "Alle",
+      "frontend": "Frontend",
+      "fullstack": "Fullstack"
     },
     "project2": {
       "title": "Wetter-App",
-      "description": "Eine moderne Wetteranwendung mit aktuellen Wetterdaten, Vorhersagen und genauer Ortszeit inklusive Zeitzone und Sommerzeit.",
-      "skills": "API-Integration, Ortszeit-Verarbeitung, Responsives Design, Einheitumschaltung, Geolokalisierung",
+      "description": "Hilft Nutzern, aktuelles Wetter, Vorhersagen und genaue Ortszeit fuer jede Stadt schnell zu pruefen, inklusive Zeitzonen und Sommerzeit. Entwickelt mit React, API-Integration, Geolokalisierung, Einheitenwechsel und klarem Nutzerfeedback.",
+      "skills": "API-Integration, Geolokalisierung, Zeitzonenlogik, Einheitenwechsel, Responsives UI, Fehlerbehandlung",
       "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
     },
     "project3": {
-      "title": "Nutrion-App",
-      "description": "Eine Webanwendung zur Verfolgung deiner Ernährung, zur Lebensmittelsuche und zur Verwaltung deines wöchentlichen Essensplans mit Echtzeit-Nährwertdaten.",
-      "skills": "Lebensmittelsuche, Nährstoffverfolgung, Essensplanung, LocalStorage-Verwaltung",
+      "title": "Nutrient App",
+      "description": "Loest das Alltagsproblem, Mahlzeiten und Naehrwerte besser zu verstehen: Nutzer koennen Lebensmittel suchen, Naehrstoffe verfolgen und Mahlzeiten mit echten Daten planen. Entwickelt als React SPA mit Routing, Bootstrap UI, API-Daten und lokaler Speicherung.",
+      "skills": "Lebensmittelsuche, Naehrstofftracking, Wochenplanung, Lokale Speicherung, Responsives UI",
       "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
     },
     "project4": {
       "title": "Mehr Blog",
-      "description": "Ein Fullstack-Blog mit Authentifizierung, Profilverwaltung, Bild-Uploads und CRUD-Funktionalität für Beiträge.",
-      "skills": "Benutzerauthentifizierung, Beiträge bearbeiten, Datei-Upload, Profilbearbeitung, REST API, Swagger-Dokumentation",
+      "description": "Bietet Autoren einen kompletten Publishing-Flow: anmelden, Profil verwalten, Bilder hochladen und Beitraege ueber eine dokumentierte REST API erstellen, bearbeiten oder loeschen. Entwickelt mit React, Node/Express, MongoDB, JWT und Cloud Deployment.",
+      "skills": "Benutzerauthentifizierung, CRUD fuer Beitraege, Datei-Upload, Profilbearbeitung, REST API, Swagger-Dokumentation",
       "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
     },
     "project5": {
-      "title": "Talki - Chat App",
-      "description": "Eine funktionsreiche Chat-App mit sicherer Echtzeit-Kommunikation, Gruppen- und Privatnachrichten, Dateifreigabe, Emoji-Reaktionen und modernen UI-Themes.",
-      "skills": "Echtzeit-Kommunikation, Gruppen- & Einzelchats, Datei-Uploads, Lesebestätigungen, Emoji-Reaktionen, Authentifizierung",
+      "title": "Talki Chat App",
+      "description": "Loest Kommunikationsbedarf in Echtzeit mit privaten Chats, Gruppenchats, sicherer Authentifizierung, Dateifreigabe, Lesebestaetigungen, Reaktionen und Theme-Support. Entwickelt mit React, Node/Express, MongoDB, Socket.IO, JWT und Multer.",
+      "skills": "Echtzeit-Kommunikation, Gruppen- und Einzelchats, Datei-Uploads, Lesebestaetigungen, Emoji-Reaktionen, Authentifizierung",
       "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
     },
     "project6": {
       "title": "Meal Plan Generator",
-      "description": "Eine KI-basierte App zur Erstellung personalisierter Ernährungspläne basierend auf deinen Vorlieben und diätetischen Einschränkungen.",
-      "skills": "KI-Empfehlungen, Zahlungsabwicklung, Benutzerauthentifizierung",
+      "description": "Hilft Nutzern, Vorlieben und Einschraenkungen in personalisierte Ernaehrungsplaene umzuwandeln, inklusive Account-Management und zahlungsbereitem Produktflow. Entwickelt mit Next.js, TypeScript, PostgreSQL, Prisma, Clerk, Stripe, React Query und OpenAI API.",
+      "skills": "KI-Empfehlungen, Authentifizierung, Payments, Datenbankmodellierung, Server-State-Management",
       "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
+    },
+    "project7": {
+      "title": "Enterprise Admin Dashboard",
+      "description": "Zeigt, wie ein Business-Admin-Interface KPIs, Statistiken, geschuetzte Seiten und Navigation in einer wartbaren Frontend-Architektur organisiert. Entwickelt mit React, TypeScript, Redux Toolkit, React Router, Axios, SCSS Modules und Demo-Auth-Flow.",
+      "skills": "Feature-orientierte Architektur, Geschuetzte Routen, Demo-Auth-Flow, Redux-Async-States, Responsives Dashboard-UI, Wiederverwendbare Komponenten",
+      "technologies": "React, Vite, TypeScript, React Router, Redux Toolkit, React Redux, Axios, SCSS Modules, ESLint, Prettier"
     }
   },
   "project": {
     "title": "Projekte",
-    "description": "Worum geht es in diesem Projekt?",
-    "skills": "Fähigkeiten",
+    "details": "Projektdetails",
+    "description": "Aufgabe",
+    "skills": "Umsetzungsfokus",
     "technologies": "Technologien",
     "github": "GitHub-Repo",
-    "join": "Projekt beitreten",
-    "next": "Nächstes Projekt"
+    "join": "Live Demo",
+    "next": "Naechstes Projekt"
   },
   "contacts": {
     "title": "Kontakte",
@@ -87,7 +94,9 @@
     "email": "Deine E-Mail",
     "message": "Deine Nachricht",
     "button": "Nachricht senden",
-    "success": "Nachricht an Telegram gesendet!",
-    "error": "Nachricht konnte nicht gesendet werden"
+    "sending": "Wird gesendet...",
+    "success": "Nachricht gesendet. Ich antworte bald!",
+    "error": "Nachricht konnte nicht gesendet werden",
+    "timeout": "Der Server antwortet zu langsam. Bitte versuche es erneut oder schreibe mir direkt per E-Mail."
   }
 }

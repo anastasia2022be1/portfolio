@@ -1,6 +1,3 @@
-import project01 from './../img/projects/01.jpg';
-import project01Big from './../img/projects/01-big.jpg'
-
 import project02 from './../img/projects/02.jpg';
 import project02Big from './../img/projects/02-big.jpg'
 
@@ -16,17 +13,22 @@ import project05Big from './../img/projects/05-big.jpg'
 import project06 from './../img/projects/06.jpg';
 import project06Big from './../img/projects/06-big.jpg'
 
+import project07 from './../img/projects/07.svg';
+import project07Big from './../img/projects/07-big.svg'
+
 export const projects = [
     {
-        id: 1,
-        img: project01,
-        imgBig: project01Big,
-        gitHubLink: 'https://github.com/anastasia2022be1/dior',
-        deployLink: 'https://anastasia2022be1.github.io/dior/',
-        translationKey: 'project1'
-      },   
+        id: 7,
+        category: 'frontend',
+        img: project07,
+        imgBig: project07Big,
+        gitHubLink: 'https://github.com/anastasia2022be1/enterprise-admin-dashboard',
+        deployLink: 'https://enterprise-admin-dashboard.vercel.app/dashboard',
+        translationKey: 'project7'
+    },
     {
         id: 2,
+        category: 'frontend',
         img: project02,
         imgBig: project02Big,
         gitHubLink: 'https://github.com/anastasia2022be1/weather-app',
@@ -35,6 +37,7 @@ export const projects = [
     },
     {
         id: 3,
+        category: 'frontend',
         img: project03,
         imgBig: project03Big,
         gitHubLink: 'https://github.com/anastasia2022be1/nutrient-counter',
@@ -43,6 +46,7 @@ export const projects = [
     },
     {
         id: 4,
+        category: 'fullstack',
         img: project04,
         imgBig: project04Big,
         gitHubLink: 'https://github.com/anastasia2022be1/mehr-blog',
@@ -51,6 +55,7 @@ export const projects = [
     },
     {
         id: 5,
+        category: 'fullstack',
         img: project05,
         imgBig: project05Big,
         gitHubLink: 'https://github.com/anastasia2022be1/chat-app',
@@ -58,6 +63,7 @@ export const projects = [
     },
     {
         id: 6,
+        category: 'fullstack',
         img: project06,
         imgBig: project06Big,
         gitHubLink: 'https://github.com/anastasia2022be1/meal-plan',

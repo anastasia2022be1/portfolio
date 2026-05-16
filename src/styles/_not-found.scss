@@ -1,4 +1,5 @@
 @use "@/styles/variables" as *;
+@use "sass:color";
 
 .not-found {
   text-align: center;
@@ -25,7 +26,7 @@
     text-decoration: none;
 
     &:hover {
-      background-color: darken($accent, 10%);
+      background-color: color.adjust($accent, $lightness: -10%);
     }
   }
 

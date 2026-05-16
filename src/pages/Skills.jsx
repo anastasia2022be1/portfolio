@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaServer } from "react-icons/fa";
-import { SiTypescript, SiPostgresql, SiMongodb, SiExpress } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaServer, FaRobot, FaProjectDiagram } from "react-icons/fa";
+import { SiTypescript, SiPostgresql, SiMongodb, SiExpress, SiRedux, SiNextdotjs } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 export default function Skills() {
@@ -44,6 +44,14 @@ export default function Skills() {
             <span>React</span>
           </div>
           <div className="skill">
+            <SiNextdotjs className="skill-icon" />
+            <span>Next.js</span>
+          </div>
+          <div className="skill">
+            <SiRedux className="skill-icon" />
+            <span>Redux Toolkit</span>
+          </div>
+          <div className="skill">
             <FaNodeJs className="skill-icon" />
             <span>Node.js</span>
           </div>
@@ -70,6 +78,14 @@ export default function Skills() {
           <div className="skill">
             <FaDocker className="skill-icon" />
             <span>Docker</span>
+          </div>
+          <div className="skill">
+            <FaProjectDiagram className="skill-icon" />
+            <span>n8n Automation</span>
+          </div>
+          <div className="skill">
+            <FaRobot className="skill-icon" />
+            <span>AI API Integration</span>
           </div>
           <div className="skill">
             <SiTypescript className="skill-icon" />

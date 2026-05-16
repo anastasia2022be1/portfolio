@@ -10,85 +10,93 @@
   "header": {
     "name": "Anastasia Sevastianova",
     "title": "Fullstack Developer",
-    "subtitle": "With passion for learning and creating",
+    "subtitle": "I build responsive web apps, fullstack products, and practical AI automations",
     "work": "Check my work",
     "contact": "Contact me"
   },
   "about": {
     "title": "Who I am",
     "subtitle": "About me",
-    "text1": "Hi, I’m a Fullstack Developer passionate about building intuitive, high-performance, and scalable web applications. My journey into development started with a curiosity about how technology can simplify and improve everyday life.",
+    "text1": "Hi, I am a Fullstack Developer passionate about building intuitive, high-performance, and scalable web applications. My journey into development started with a curiosity about how technology can simplify and improve everyday life.",
     "text2": "I love the problem-solving aspect of programming, where logic meets creativity. Turning complex technical challenges into elegant solutions is what drives me.",
     "text3": "I thrive in collaborative environments, where I can share knowledge, learn from others, and contribute to meaningful projects. Being adaptable, I work effectively both on-site and remotely.",
-    "text4": "For me, programming isn’t just about writing code—it’s about creating impactful digital experiences that enhance businesses and people's lives. I am constantly learning and exploring new possibilities in tech."
+    "text4": "For me, programming is not just about writing code. It is about creating useful digital experiences that help people and businesses work better."
   },
   "skills": {
     "title": "Skill Set",
-    "description": "My journey has involved working on diverse projects, employing a range of frontend and backend technologies. I am always eager to embrace new tools and methodologies to enhance my expertise and stay ahead in the fast-paced world of web development.",
+    "description": "My projects combine frontend implementation, fullstack architecture, API integration, authentication, databases, and automation. I focus on building clear, maintainable products that solve practical user problems.",
     "contact": "Need another skill?",
     "contact_link": "Feel free to contact me. I look forward to expanding my knowledge."
   },
   "projects": {
     "title": "My Projects",
-    "project1": {
-      "title": "Dior Landing Page",
-      "description": "An elegant and interactive landing page inspired by the GRIS DIOR fragrance. Built with modern web technologies to showcase refined design, animations, and responsive layout.",
-      "skills": "Responsive layout, DOM manipulation, Slider integration, UI animations, Accordion functionality",
-      "technologies": "HTML5, CSS3, JavaScript, SwiperJS, Google Fonts"
+    "filterLabel": "Filter projects by category",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "fullstack": "Fullstack"
     },
     "project2": {
       "title": "Weather App",
-      "description": "A modern weather application that displays current weather, forecasts, and accurate local time with timezone and DST support.",
-      "skills": "API integration, Local time handling, Responsive design, Unit switching, Geolocation",
+      "description": "Helps users quickly check current weather, forecast, and accurate local time for any city, including timezone and daylight-saving handling. Built with React, API integration, geolocation, unit switching, and resilient user feedback.",
+      "skills": "API integration, Geolocation, Timezone handling, Unit switching, Responsive UI, Error handling",
       "technologies": "React, Tailwind CSS, OpenWeather API, Luxon, React Toastify, GeoNames API"
     },
     "project3": {
       "title": "Nutrient App",
-      "description": "A web application to track your diet, explore foods, and manage your weekly meal plan using real-time nutritional data.",
-      "skills": "Food search, Nutrition tracking, Weekly meal planning, LocalStorage management",
+      "description": "Solves the everyday problem of understanding meals and nutrition by letting users search foods, track nutrients, and plan meals with real nutritional data. Built as a React SPA with routing, Bootstrap UI, API data, and local persistence.",
+      "skills": "Food search, Nutrition tracking, Weekly meal planning, Client-side persistence, Responsive UI",
       "technologies": "React, React Router, React Bootstrap, USDA FoodData API, LocalStorage"
     },
     "project4": {
       "title": "Mehr Blog",
-      "description": "Fullstack blog application with authentication, profile management, image uploads, and post CRUD operations.",
+      "description": "Gives authors a complete publishing flow: sign in, manage a profile, upload images, and create, edit, or delete posts through a documented REST API. Built with a React frontend, Node/Express backend, MongoDB, JWT auth, and cloud deployment.",
       "skills": "User authentication, CRUD posts, File upload, Profile editing, REST API, Swagger documentation",
       "technologies": "React, Node.js, Express, MongoDB, JWT, Swagger, Vercel, Render"
     },
     "project5": {
-      "title": "Talki- Chat App",
-      "description": "A full-featured chat application with secure real-time messaging, group and private chats, file sharing, emoji reactions, and modern UI themes.",
+      "title": "Talki Chat App",
+      "description": "Solves real-time communication needs with private and group chats, secure authentication, file sharing, read receipts, reactions, and theme support. Built with a React frontend, Node/Express API, MongoDB, Socket.IO, JWT, and Multer.",
       "skills": "Real-time communication, Group and private chats, File uploads, Read receipts, Emoji reactions, Authentication",
       "technologies": "React, Tailwind CSS, Node.js, Express, MongoDB, Socket.IO, JWT, Multer"
     },
     "project6": {
       "title": "Meal Plan Generator",
-      "description": "An AI-powered meal planning app that generates personalized meal plans based on user preferences and dietary restrictions.",
-      "skills": "AI-driven recommendations, Payment processing, User authentication",
+      "description": "Helps users turn dietary preferences and restrictions into personalized meal plans, with account management and payment-ready product flow. Built with Next.js, TypeScript, PostgreSQL, Prisma, Clerk, Stripe, React Query, and OpenAI API.",
+      "skills": "AI recommendations, Authentication, Payments, Database modeling, Server-state management",
       "technologies": "Next.js, TypeScript, TailwindCSS, PostgreSQL, Clerk, Stripe, OpenAI API, Prisma, React Query"
+    },
+    "project7": {
+      "title": "Enterprise Admin Dashboard",
+      "description": "Shows how a business admin interface can organize KPIs, statistics, protected pages, and navigation in a maintainable frontend architecture. Built with React, TypeScript, Redux Toolkit, React Router, Axios, SCSS Modules, and a demo auth flow.",
+      "skills": "Feature-oriented architecture, Protected routes, Demo auth flow, Redux async states, Responsive dashboard UI, Reusable components",
+      "technologies": "React, Vite, TypeScript, React Router, Redux Toolkit, React Redux, Axios, SCSS Modules, ESLint, Prettier"
     }
   },
-    "project": {
-      "title": "Projects",
-      "description": "What is this project about?",
-      "skills": "Skills",
-      "technologies": "Technologies",
-      "github": "GitHub Repo",
-      "join": "Join Project",
-      "next": "Next Project"
-    },
-    "contacts": {
-      "title": "Contacts",
-      "locationTitle": "Location",
-      "emailTitle": "Email"
-    },
-    "form": {
-      "title": "Write me",
-      "name": "Your name",
-      "email": "Your email",
-      "message": "Your message",
-      "button": "Send Message",
-      "success": "Message sent to Telegram!",
-      "error": "Failed to send message"
-    }
+  "project": {
+    "title": "Projects",
+    "details": "Project details",
+    "description": "Task",
+    "skills": "Implementation focus",
+    "technologies": "Technologies",
+    "github": "GitHub Repo",
+    "join": "Live Demo",
+    "next": "Next Project"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "locationTitle": "Location",
+    "emailTitle": "Email"
+  },
+  "form": {
+    "title": "Write me",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "button": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent. I will reply soon!",
+    "error": "Failed to send message",
+    "timeout": "The server is taking too long to respond. Please try again or email me directly."
   }
-
+}
