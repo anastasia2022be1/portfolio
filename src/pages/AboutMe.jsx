@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import myPhoto from "../img/my-photo.png";
+import myPhoto from "../img/my-photo.jpg";
 import { FaLaptopCode, FaLightbulb, FaUsers, FaRocket } from "react-icons/fa";
 
 export default function AboutMe() {

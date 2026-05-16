@@ -13,8 +13,8 @@ import project05Big from './../img/projects/05-big.jpg'
 import project06 from './../img/projects/06.jpg';
 import project06Big from './../img/projects/06-big.jpg'
 
-import project07 from './../img/projects/07.svg';
-import project07Big from './../img/projects/07-big.svg'
+import project07 from './../img/projects/07.jpg';
+import project07Big from './../img/projects/07-big.jpg'
 
 export const projects = [
     {
